@@ -1,0 +1,39 @@
+// Copyright (C) 2026 Intel Corporation
+// SPDX-License-Identifier: Apache-2.0
+
+import { AlertDialog, Button, DialogTrigger } from '@geti-ui/ui';
+import { useDeleteStagedDataset } from 'hooks/api/staged-dataset.hook';
+
+import { t } from '../../i18n';
+
+type DeleteStagedFileConfirmationProps = {
+    stagedDatasetId: string;
+    deleteEntry: () => void;
+};
+
+export const DeleteStagedFileConfirmation = ({ stagedDatasetId, deleteEntry }: DeleteStagedFileConfirmationProps) => {
+    const deleteFileMutation = useDeleteStagedDataset({ stagedDatasetId, deleteEntry });
+
+    const handleCancel = () => {
+        deleteFileMutation.mutate();
+    };
+
+    return (
+        <DialogTrigger>
+            <Button variant='secondary' style='fill' aria-label={t('delete import dataset status')}>
+                {t('Delete')}
+            </Button>
+            <AlertDialog
+                title={t('Delete Staged File')}
+                variant='destructive'
+                cancelLabel='Cancel'
+                autoFocusButton='primary'
+                primaryActionLabel={t('Delete')}
+                onPrimaryAction={handleCancel}
+                isPrimaryActionDisabled={deleteFileMutation.isPending}
+            >
+                {t('Are you sure you want to delete the dataset file "{{value0}}"?', { value0: stagedDatasetId })}
+            </AlertDialog>
+        </DialogTrigger>
+    );
+};

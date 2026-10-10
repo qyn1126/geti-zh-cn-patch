@@ -1,0 +1,41 @@
+// Copyright (C) 2025 Intel Corporation
+// SPDX-License-Identifier: Apache-2.0
+
+import type { LocalFolderSinkConfig } from '@/api/types';
+import { Flex, TextField } from '@geti-ui/ui';
+
+import { t } from '../../../../i18n';
+import { OutputFormats } from '../output-formats/output-formats.component';
+import { RateLimitFields } from '../rate-limit/rate-limit-fields.component';
+
+type LocalFolderProps = {
+    defaultState: LocalFolderSinkConfig;
+};
+
+export const LocalFolder = ({ defaultState }: LocalFolderProps) => {
+    return (
+        <Flex direction='column' gap='size-200'>
+            <TextField isHidden label='id' name='id' defaultValue={defaultState.id} />
+
+            <Flex gap='size-200'>
+                <TextField label={t('Name')} name='name' defaultValue={defaultState.name || 'Local folder sink'} />
+            </Flex>
+
+            <Flex>
+                <RateLimitFields rateLimit={defaultState.rate_limit} />
+            </Flex>
+
+            <Flex gap='size-50'>
+                <TextField
+                    isRequired
+                    width={'100%'}
+                    label={t('Folder Path')}
+                    name='folder_path'
+                    defaultValue={defaultState.folder_path}
+                />
+            </Flex>
+
+            <OutputFormats config={defaultState.output_formats} />
+        </Flex>
+    );
+};

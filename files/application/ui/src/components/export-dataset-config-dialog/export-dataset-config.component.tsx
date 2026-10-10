@@ -1,0 +1,205 @@
+// Copyright (C) 2026 Intel Corporation
+// SPDX-License-Identifier: Apache-2.0
+
+import { ReactNode, useState } from 'react';
+
+import {
+    Button,
+    ButtonGroup,
+    Checkbox,
+    Content,
+    Dialog,
+    DialogContainer,
+    Divider,
+    Flex,
+    Form,
+    Heading,
+    Radio,
+    RadioGroup,
+    Text,
+    View,
+} from '@geti-ui/ui';
+import { Alert, LinkOut } from '@geti-ui/ui/icons';
+import { OverlayTriggerState } from '@react-stately/overlays';
+import { useDatasetStatisticsQuery } from 'hooks/api/dataset.hook';
+import { useProject } from 'hooks/api/project.hook';
+
+import { useExportDatasetJobAction } from '../../hooks/use-export-dataset-job-action.hook';
+import { t } from '../../i18n';
+import { Link } from '../../platform/components/link.component';
+import { isEmptyLabel, useProjectLabelsWithEmptyLabel } from '../../shared/annotator/labels';
+import { MultiSelectList } from '../multi-select-list/multi-select-list.component';
+import { getFormatOptions } from '../util';
+
+import classes from './export-dataset-config.module.scss';
+
+const EXPORT_VIDEOS_WARNING_MESSAGE =
+    t('Exporting videos is not supported by this dataset format. ') +
+    t('All annotated frames from videos will be exported as images.');
+const EXPORT_EMPTY_LABEL_WARNING_MESSAGE = (emptyLabelName: string) =>
+    t('The selected format does not support empty labels (e.g. ' + '"{{value0}}"). ', { value0: emptyLabelName }) +
+    t('Images and frames containing them will be exported as unannotated.');
+const EXPORT_UNSUPPORTED_ITEMS_WARNING_MESSAGE = (unsupportedItems: string) =>
+    t('To preserve {{value0}}, please use the Geti export format.', { value0: unsupportedItems });
+const EXPORT_COCO_WARNING_MESSAGE = t(
+    "The exported dataset won't include any information about the " + 'subset assigned to each media.'
+);
+
+const WarningMessages = ({ selectedExportFormat }: { selectedExportFormat: string | null }) => {
+    const isVisible = selectedExportFormat !== 'geti';
+
+    const { data: statistics } = useDatasetStatisticsQuery(isVisible);
+    const emptyLabel = useProjectLabelsWithEmptyLabel().find(isEmptyLabel);
+
+    const isCocoFormatSelected = selectedExportFormat === 'coco';
+
+    const hasVideos = (statistics?.media_counts.videos ?? 0) > 0;
+    // Media annotated with the empty label is reported by the API under a `null` label id
+    const emptyLabelName = statistics?.annotations_counts.instances_per_label.some(
+        ({ label_id, instances }) => label_id === null && instances > 0
+    )
+        ? emptyLabel?.name
+        : undefined;
+
+    const unsupportedItems = [hasVideos && 'videos', emptyLabelName !== undefined && t('empty labels')]
+        .filter(Boolean)
+        .join(t(' or '));
+
+    if (!isVisible || (!hasVideos && emptyLabelName === undefined && !isCocoFormatSelected)) {
+        return null;
+    }
+
+    return (
+        <Flex alignItems={'start'} marginTop={'size-100'} gap={'size-100'}>
+            <Flex>
+                <Alert className={classes.warningMessageIcon} />
+            </Flex>
+            <Flex direction={'column'} gap={'size-75'}>
+                {hasVideos && <Text>{EXPORT_VIDEOS_WARNING_MESSAGE}</Text>}
+                {emptyLabelName !== undefined && <Text>{EXPORT_EMPTY_LABEL_WARNING_MESSAGE(emptyLabelName)}</Text>}
+                {unsupportedItems && <Text>{EXPORT_UNSUPPORTED_ITEMS_WARNING_MESSAGE(unsupportedItems)}</Text>}
+                {isCocoFormatSelected && <Text>{EXPORT_COCO_WARNING_MESSAGE}</Text>}
+            </Flex>
+        </Flex>
+    );
+};
+
+type ExportDatasetConfigProps = {
+    name?: string;
+    datasetId: string | null;
+    statistics: ReactNode;
+    dialogState: OverlayTriggerState;
+};
+
+const FORM_ID = 'export-dataset-form';
+const EXPORT_FORMATS_LINK =
+    'https://docs.geti.intel.com/docs/user-guide/geti-fundamentals/datasets/dataset-export-import#supported-formats';
+
+type ExportDatasetDialogContentProps = {
+    name: string;
+    datasetId: string | null;
+    statistics: ReactNode;
+    dialogState: OverlayTriggerState;
+};
+
+const ExportDatasetDialogContent = ({ name, datasetId, statistics, dialogState }: ExportDatasetDialogContentProps) => {
+    const { data: selectedProject } = useProject();
+
+    const [formState, submitAction, isPending] = useExportDatasetJobAction({
+        datasetId,
+        onSuccess: dialogState.close,
+    });
+
+    const formatOptions = getFormatOptions(selectedProject.task.task_type);
+    const [selectedExportFormat, setSelectedExportFormat] = useState<string | null>(formatOptions.at(0)?.value ?? null);
+
+    const labels = selectedProject.task.labels?.map((label) => ({ id: label.name, name: label.name })) ?? [];
+
+    return (
+        <Dialog size='L' width={{ base: '70vw' }}>
+            <Heading>
+                {t('Export ')}
+                {name}
+            </Heading>
+            <Divider />
+            <Content UNSAFE_className={classes.container}>
+                <Heading>{t('Exported dataset statistics')}</Heading>
+                {statistics}
+
+                <Heading>{t('Export settings')}</Heading>
+
+                <View backgroundColor='gray-75' padding='size-200' borderRadius='regular'>
+                    <Form id={FORM_ID} validationBehavior='native' action={submitAction}>
+                        <MultiSelectList
+                            name='labels'
+                            items={labels}
+                            maxHeight='size-2000'
+                            label={t('Filter annotations by label')}
+                            defaultSelectedKeys={new Set(labels.map(({ id }) => id))}
+                        />
+
+                        <Checkbox name='include_unannotated' defaultSelected={formState.include_unannotated}>
+                            {t('Include media without annotations')}
+                        </Checkbox>
+
+                        <Divider size='S' />
+
+                        <RadioGroup
+                            name='export_format'
+                            label={t('Select dataset export format')}
+                            defaultValue={formState.export_format}
+                            onChange={(value) => setSelectedExportFormat(value)}
+                        >
+                            {formatOptions.map((item) => (
+                                <Radio key={item.value} value={item.value}>
+                                    {item.label}
+                                </Radio>
+                            ))}
+                        </RadioGroup>
+                    </Form>
+
+                    <WarningMessages selectedExportFormat={selectedExportFormat} />
+
+                    <Link
+                        href={EXPORT_FORMATS_LINK}
+                        target='_blank'
+                        rel='noopener noreferrer'
+                        UNSAFE_className={classes.link}
+                    >
+                        {t('Learn more about export formats')}
+                        <LinkOut size='XS' />
+                    </Link>
+                </View>
+            </Content>
+
+            <ButtonGroup>
+                <Button onPress={dialogState.close} variant='secondary'>
+                    {t('Cancel')}
+                </Button>
+                <Button type='submit' form={FORM_ID} variant='accent' isPending={isPending} isDisabled={isPending}>
+                    {t('Export')}
+                </Button>
+            </ButtonGroup>
+        </Dialog>
+    );
+};
+
+export const ExportDatasetConfig = ({
+    name = 'dataset',
+    datasetId,
+    statistics,
+    dialogState,
+}: ExportDatasetConfigProps) => {
+    return (
+        <DialogContainer onDismiss={dialogState.close}>
+            {dialogState.isOpen && (
+                <ExportDatasetDialogContent
+                    name={name}
+                    datasetId={datasetId}
+                    statistics={statistics}
+                    dialogState={dialogState}
+                />
+            )}
+        </DialogContainer>
+    );
+};

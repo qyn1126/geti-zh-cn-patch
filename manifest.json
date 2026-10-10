@@ -1,0 +1,2228 @@
+{
+  "format_version": 1,
+  "upstream_repository": "https://github.com/open-edge-platform/geti",
+  "base_tag": "app/v3.2.0",
+  "base_commit": "9456821d060a2143cf05a2e01504acbb9924a578",
+  "description": "Geti UI Simplified Chinese localization overlay",
+  "patch": "patches/geti-zh-cn.patch",
+  "patch_sha256": "d95b888eb0e19afaa417b5a96c2bfeb8e335ea9e19ce9a96361b69edc32511a8",
+  "counts": {
+    "modified": 312,
+    "added": 4
+  },
+  "content_note": "Source files use the canonical bytes recorded by Git, normally UTF-8 with LF.",
+  "files": [
+    {
+      "path": "application/ui/README.md",
+      "status": "modified",
+      "sha256": "002a216afc885202bb3a4825020418239d205a48875633a8e8ae90c46af9a4c2",
+      "size_bytes": 13787,
+      "base_sha256": "61d2c66ec3183abd2581d4ab4f0e31256990e8a0fa9fabb375f005f076d9c39b"
+    },
+    {
+      "path": "application/ui/src/components/circular-progress/circular-progress.component.tsx",
+      "status": "modified",
+      "sha256": "45cf44220f52283b4063caffd31c78b5431f40ed7334f732c8fe25d55bdc69d7",
+      "size_bytes": 3859,
+      "base_sha256": "64b81b086dae2c3562a217e857f0611006ba05b542e9c612acb9541250da5498"
+    },
+    {
+      "path": "application/ui/src/components/confidence-threshold/confidence-threshold.component.tsx",
+      "status": "modified",
+      "sha256": "48a83acfe14aed17363f08ba6c12a68f589938b886d6f30e5f6cfc67bdab48fd",
+      "size_bytes": 3077,
+      "base_sha256": "882de6e5a2bbf692165dc92b82e65fc053957a21d515c86915846a87e611b1ad"
+    },
+    {
+      "path": "application/ui/src/components/connection-status-badge/connection-status-badge.component.tsx",
+      "status": "modified",
+      "sha256": "6660a0cc8c4523a3c7f779ada9e7ffee314cc7be2c5ca099f2f672b6efe7e862",
+      "size_bytes": 1770,
+      "base_sha256": "09b62d410f3558873ca176c6a2fdc5dadb0deec8c613e025f9613057945aaf80"
+    },
+    {
+      "path": "application/ui/src/components/dataset-statistics/dataset-statistics.component.tsx",
+      "status": "modified",
+      "sha256": "c2a2c8a58e4461649a76e231f050348e480320ca4c7a1d206299e26e6e9169aa",
+      "size_bytes": 3676,
+      "base_sha256": "d7f865ab8e98efd9139d84ff2014e73893d7ccf72379c439b97c6974f09da085"
+    },
+    {
+      "path": "application/ui/src/components/delete-staged-file-confirmation/delete-staged-file-confirmation.component.tsx",
+      "status": "modified",
+      "sha256": "7f2f52b4e8cb2d46253666bbcb0e1b598453663a8b6b79ab4691ecd6e99d216b",
+      "size_bytes": 1382,
+      "base_sha256": "095045d369ccf14ee642cde3d6f62423d9ab5a355c17fbc997d1c7322f2d03ca"
+    },
+    {
+      "path": "application/ui/src/components/enable-pipeline-blocked-dialog/enable-pipeline-blocked-dialog.component.tsx",
+      "status": "modified",
+      "sha256": "ae60d1b7e0093262f1f2240dc90025535ca70008767714f64cf3fbd188c0e882",
+      "size_bytes": 882,
+      "base_sha256": "2d5f83cecd2d94290e6bf882918affd2c7a76f178f1081e4d2cd2b07ef30f033"
+    },
+    {
+      "path": "application/ui/src/components/export-dataset-config-dialog/export-dataset-config.component.tsx",
+      "status": "modified",
+      "sha256": "9cc56a4c38487d4a0b762d4d8c6d48028e3567013b16166a7c17f35c25677486",
+      "size_bytes": 7929,
+      "base_sha256": "7a976d66cf4e51a23bf17c416da9e39f0009f980aca651cc0056d4a5779438ee"
+    },
+    {
+      "path": "application/ui/src/components/import-card-status/import-active-job/import-active-job.component.tsx",
+      "status": "modified",
+      "sha256": "5efd78b2bc1fb6619459d2bf3c35fed1f904b45515bd57dc37f7efc9ad3a9ea6",
+      "size_bytes": 2009,
+      "base_sha256": "f890823ab8fe6f0f45435f68461749872ea02ffe1e35a4a649b07e20f80f5cb1"
+    },
+    {
+      "path": "application/ui/src/components/import-card-status/import-failed-job/import-failed-job.component.tsx",
+      "status": "modified",
+      "sha256": "ecbcd2a61d8472b2be3f6f45ccbd2118694c35da7c1e9b2e69966f8a51fd2768",
+      "size_bytes": 2322,
+      "base_sha256": "cb704aa4500ee1d9da19acb13f25ab59503a98c0c42857cd8ec8c33fe2ad81f7"
+    },
+    {
+      "path": "application/ui/src/components/import-card-status/staged-import-dataset/staged-import-dataset.component.tsx",
+      "status": "modified",
+      "sha256": "de2192279aa0e88de2dd6ae8ec216499094c4221cfc32bb13579ddfce18f2c8f",
+      "size_bytes": 2230,
+      "base_sha256": "0cd1179b0fb7c7b9593ba02c76f180686898578a77cfa5a682e374731854bfb2"
+    },
+    {
+      "path": "application/ui/src/components/import-job-process/import-job-process-buttons.component.tsx",
+      "status": "modified",
+      "sha256": "cf25bbc10012832f0bca361c0fbac46b3d8f8b9634a836013162c2dc1246c3a3",
+      "size_bytes": 1502,
+      "base_sha256": "15603a1b7238c76f1c60c2e41dc4a3a4f1bf4b418d74dd39dd4e6b33f497f7f8"
+    },
+    {
+      "path": "application/ui/src/components/import-job-process/import-job-process.component.tsx",
+      "status": "modified",
+      "sha256": "f70133d2f1712eeef796e7d43f53afef6a55744170d5ec92176237dfc6ad5af2",
+      "size_bytes": 2362,
+      "base_sha256": "dfd1ff1bd69aa09fb4c4a43f99eb6dc2a477914bfd92b963458691e514288dcc"
+    },
+    {
+      "path": "application/ui/src/components/import-upload-file/import-upload-file.component.tsx",
+      "status": "modified",
+      "sha256": "a81bd9624dd1fe60324ac63f243339b14a16b2f0658c328e79fdcb33d9d77afe",
+      "size_bytes": 4769,
+      "base_sha256": "2b232abbae3f21043d73bf6a3d9032d093e68775a5689c50e43d1885823f151d"
+    },
+    {
+      "path": "application/ui/src/components/label-fields/hotkey-field.component.tsx",
+      "status": "modified",
+      "sha256": "79bb52f6aa060b02c3da86258b6696ee6cac422774e47c59015dbfe8fdc4d31c",
+      "size_bytes": 2223,
+      "base_sha256": "ce8f39c18dda915974ccfda028b72c4bba89556ab08948bac96111afbc28a5ad"
+    },
+    {
+      "path": "application/ui/src/components/label-fields/label-validation.ts",
+      "status": "modified",
+      "sha256": "24ad231fcddb65f52ac0b0de2e706f9b8988d7b23f5b2df4e73b1337479f7fcb",
+      "size_bytes": 948,
+      "base_sha256": "02aa2e606835a64203fadaae518d9be0b51f924b4f74e0440be3facde83a952a"
+    },
+    {
+      "path": "application/ui/src/components/language-picker/language-picker.component.tsx",
+      "status": "added",
+      "sha256": "23ea82e655ece1ffa878a6e0b689b81402c12165611162c8c808dc5fc0262c87",
+      "size_bytes": 964,
+      "base_sha256": null
+    },
+    {
+      "path": "application/ui/src/components/loading-import-dataset/loading-import-dataset.component.tsx",
+      "status": "modified",
+      "sha256": "6b13761d41619d89b616298f7c4c17aafc7e434e9034b2db4f858b7e8fd7d5ec",
+      "size_bytes": 3006,
+      "base_sha256": "8af92d2aad68a53a39c9146f975b783d51f4910a03bb5269a0ed26fee0551a44"
+    },
+    {
+      "path": "application/ui/src/components/media-view-mode-picker/media-view-mode-picker.component.tsx",
+      "status": "added",
+      "sha256": "c6f66ba7899df60f9a225e929905e1d40c237ea89023bf14a6e3b203d3430b10",
+      "size_bytes": 1424,
+      "base_sha256": null
+    },
+    {
+      "path": "application/ui/src/components/multi-select-list/multi-select-list.component.tsx",
+      "status": "modified",
+      "sha256": "1513a8b605959281d7577fb1be9b25f147227135e92fe87d7ca308e266654f6a",
+      "size_bytes": 2670,
+      "base_sha256": "d10a0496324a556936b3573ee36c9415423a59ffd8ee50dafcce4bd2cbb99099"
+    },
+    {
+      "path": "application/ui/src/components/prepare-import-dataset/prepare-import-dataset.component.tsx",
+      "status": "modified",
+      "sha256": "6b13e112c9beff696ea203c86a77d0487fe8c008a73b7ec73e010d9a6d8ef1a0",
+      "size_bytes": 2132,
+      "base_sha256": "2b7db909d8efa24f38d0fbc1307e06d41c4fac4e8a0abef3baf20869e6c594bb"
+    },
+    {
+      "path": "application/ui/src/components/project-dialogs/delete-project-dialog.component.tsx",
+      "status": "modified",
+      "sha256": "d4f8c2efc351c8209082657d8913d1cc2887b901de494a895d70c3c775e35884",
+      "size_bytes": 1700,
+      "base_sha256": "3282534d92317b33b11713b59198615fbaa23d8cc012226e8c0b17329b4fcbfa"
+    },
+    {
+      "path": "application/ui/src/components/project-dialogs/edit-project-name-dialog.component.tsx",
+      "status": "modified",
+      "sha256": "206efcec03107a4e58abc9d7be7be79bae668ca6ae70920a4df0594885c3034a",
+      "size_bytes": 4111,
+      "base_sha256": "5b8ac17a1ea5e747491c9e0cd15afae0d3f80ce3f87201720956a7669efd4f7b"
+    },
+    {
+      "path": "application/ui/src/components/project-panel/projects-list-panel.component.tsx",
+      "status": "modified",
+      "sha256": "551b92a9ae3b71509922b3005339431f1d37234af5029d34a279e4235483c292",
+      "size_bytes": 10331,
+      "base_sha256": "cd2a848ecc1dbc143c091ff6e7a35e9de22b36bfcad8ebeb504e85a9d0e4ac6d"
+    },
+    {
+      "path": "application/ui/src/components/status-tag/status-tag.component.tsx",
+      "status": "modified",
+      "sha256": "1ba37a27aa07c597ef3d392b3b9adb5d48fe4ec0e1b77f78a8046340b3d7ba78",
+      "size_bytes": 1112,
+      "base_sha256": "fcc1e21a8ee6fc4502f86ff7e1b766db7467d919c85029504c42cc5853339610"
+    },
+    {
+      "path": "application/ui/src/components/toast/toast.component.tsx",
+      "status": "modified",
+      "sha256": "756bc0ac6a2f89a58d2a8f0411de46758eac23aeb6a933b65b7bc02d708c140e",
+      "size_bytes": 5807,
+      "base_sha256": "13c647d7a2d89a4774fd5d7df2eb8510c58961975d3e9c72cb0f2d2bc026603c"
+    },
+    {
+      "path": "application/ui/src/components/virtualizer-grid-layout/virtualizer-grid-layout.component.tsx",
+      "status": "modified",
+      "sha256": "4a811ecb2b23173b83ddc7ad233c970c1b6edfcbc312e2656fd77c54c395c59b",
+      "size_bytes": 4598,
+      "base_sha256": "5a19c54f0f040a8c99fc5e0425965e1469797aa76afc2fef760ce9e998f97425"
+    },
+    {
+      "path": "application/ui/src/features/annotator/annotations/annotation-labels/annotation-labels.component.tsx",
+      "status": "modified",
+      "sha256": "5e16fcf53356491d3b1b4e3bb37e207c25846ece0daf24a1522bc79dc8a17b2c",
+      "size_bytes": 4538,
+      "base_sha256": "7f533d2c6569cee6c4f0e76fa4ae888af8bb454a6a6e0e5e68fb9d632354521f"
+    },
+    {
+      "path": "application/ui/src/features/annotator/annotations/annotation-shape/annotation-shape.component.tsx",
+      "status": "modified",
+      "sha256": "3cd6e4448354ff523782934dae76419eb021a42e42f8cd36029a1d7ff2bc92f6",
+      "size_bytes": 2591,
+      "base_sha256": "637b603902f1ee6863d1faeca4b94a1e285400c4d24ce077cbbb517735a4c3d0"
+    },
+    {
+      "path": "application/ui/src/features/annotator/annotations/annotations.component.tsx",
+      "status": "modified",
+      "sha256": "7e6b8b381cf9f2953a77cc32fa75f877bc31c5c0eb065bb434ccc806681a897f",
+      "size_bytes": 1965,
+      "base_sha256": "a4f6f9d4064efff3ac6fe3cb4e483739696cedfd85645063cb1c0948a7491ecf"
+    },
+    {
+      "path": "application/ui/src/features/annotator/annotations/read-only-annotations.component.tsx",
+      "status": "modified",
+      "sha256": "8969bb721ce9c1860a19c83c69c1ecfb0731638b8ac3d148ee3f3404a632c239",
+      "size_bytes": 1664,
+      "base_sha256": "f1a77b00230af0f9acba6a1bfba9a7c500b1a723fed80f6edeac8ab7636f1648"
+    },
+    {
+      "path": "application/ui/src/features/annotator/annotations/selectable-annotation.component.tsx",
+      "status": "modified",
+      "sha256": "5ea0561d3f5629e2b931cd52639dd1c3e5f2c1cccc8d49a15caae46854867a06",
+      "size_bytes": 4020,
+      "base_sha256": "1d29476f92d663bd676d1276ba6a2e7bf581bcbfcbce86f0c6c28b73d2405d5b"
+    },
+    {
+      "path": "application/ui/src/features/annotator/annotations/video-annotations.component.tsx",
+      "status": "modified",
+      "sha256": "21a4adcb6bf330f6abf9f7dca92cbe92b1349777dc5b66907ef607c164afa7c5",
+      "size_bytes": 3059,
+      "base_sha256": "e845025b7fae365478fa74c42b2aaccedf35c55b1134f2d711ae46b014a9e70c"
+    },
+    {
+      "path": "application/ui/src/features/annotator/annotator-canvas/media-canvas.tsx",
+      "status": "modified",
+      "sha256": "b46fd964cea9504914d2de1aff7ea5e5299321b038b6ee0528081211aa7961de",
+      "size_bytes": 2762,
+      "base_sha256": "9d90ce9e93ebde95bd2710f5e6c3f2bdd6ff24d7654ef8a85057d42432aafa0c"
+    },
+    {
+      "path": "application/ui/src/features/annotator/labels/label-row/label-row.component.tsx",
+      "status": "modified",
+      "sha256": "d0685be2eaf9fc577b67922d1a949173ba78546e3eadbf0792f30ed1b1afb6fb",
+      "size_bytes": 5659,
+      "base_sha256": "3cedebab520194b3a218a61a054a63aa8d0cf2c56cbed3f4d7eaed03685f0ea2"
+    },
+    {
+      "path": "application/ui/src/features/annotator/labels/labels-editor/labels-editor-popover.component.tsx",
+      "status": "modified",
+      "sha256": "19b33a08d3f7f707bf085795d06ea705cf91dc47774b34f7de483df820092ebe",
+      "size_bytes": 3920,
+      "base_sha256": "5824ac0524f8ddbc89a23a83d8df13356119762dccc1cd935a72c46f16dc3f73"
+    },
+    {
+      "path": "application/ui/src/features/annotator/labels/labels-editor/labels-editor.component.tsx",
+      "status": "modified",
+      "sha256": "0e732b6fd9bf022bb3c490cd1c2478ca972516fc8f88d62a2aaa4748cc4b8a18",
+      "size_bytes": 3336,
+      "base_sha256": "39e6dc5aa48700e9ea5377358eb01e4e815a8f6d68e27d511e214f6cdac14e28"
+    },
+    {
+      "path": "application/ui/src/features/annotator/labels/labels.component.tsx",
+      "status": "modified",
+      "sha256": "cb372b4f19c71fb1875816e35b00e91309a8763dd03c147c76a1c65d8021c80d",
+      "size_bytes": 4801,
+      "base_sha256": "977c5c477bc1608a39e251882a26afcbc0e19892b1e76f44f4100e1fdb6c4880"
+    },
+    {
+      "path": "application/ui/src/features/annotator/labels/new-label-row/new-label-row.component.tsx",
+      "status": "modified",
+      "sha256": "94959078c4c438993fa9fc92a0df48e14202644766ecff68d1b6aa9b12d636ae",
+      "size_bytes": 4713,
+      "base_sha256": "185baa607a05d5f18e342414d7c892d87bcb2e03582b660a90f02115e1d2f43a"
+    },
+    {
+      "path": "application/ui/src/features/annotator/tools/annotator-tools/use-available-tools.ts",
+      "status": "modified",
+      "sha256": "c929d7337e28ab9352fe7c7f30b373b624420745d533738d25b087a8c92de23f",
+      "size_bytes": 3944,
+      "base_sha256": "e85e37cf043f619b0621c6f1a4d3109de4a34459044f3ebbcc5f28f375d8def5"
+    },
+    {
+      "path": "application/ui/src/features/annotator/tools/drawing-box-tool/drawing-box.component.tsx",
+      "status": "modified",
+      "sha256": "c6e236e5911de8fd4d01fec9afedb4b5e7f7b23ecf0460cca6755cb1a0153d93",
+      "size_bytes": 4324,
+      "base_sha256": "1781daff0ff5631c07c6502a65d4f48456950cf5cac8429ab8bb18d0b704b53b"
+    },
+    {
+      "path": "application/ui/src/features/annotator/tools/edit-bounding-box/edit-bounding-box.component.tsx",
+      "status": "modified",
+      "sha256": "69365934cc761ebcf225b461dd635a9988d6d624b9e51198fce891039c7f0c82",
+      "size_bytes": 2458,
+      "base_sha256": "25a6a979e3fcf91e67624bc6b6a031c9b120808256426fd3214ac5e1f8296128"
+    },
+    {
+      "path": "application/ui/src/features/annotator/tools/edit-bounding-box/translate-shape.component.tsx",
+      "status": "modified",
+      "sha256": "44d8071e6f01c146b5b0bb168d331b1ffae5e500ca936a8f5141c69e5245dff7",
+      "size_bytes": 1327,
+      "base_sha256": "050a3ab2f38ca56a5a6c624d4729ad35d7aedfa2696965a51d4ff997c4fef067"
+    },
+    {
+      "path": "application/ui/src/features/annotator/tools/edit-polygon/edit-points.component.tsx",
+      "status": "modified",
+      "sha256": "401cac135f271789e5f94a0ad0c9d577ffbeac951491d6a45d808be3e2cbe447",
+      "size_bytes": 4856,
+      "base_sha256": "a4558acbdb433177fde24a92754cec79e97f303a083204f183b2efa08b9b135d"
+    },
+    {
+      "path": "application/ui/src/features/annotator/tools/edit-polygon/resize-anchors-ghost-point.component.tsx",
+      "status": "modified",
+      "sha256": "5c12857d9080f6afd134acafc2cc6395cf79d79f43b7b912bbc75f7589c597b1",
+      "size_bytes": 4566,
+      "base_sha256": "84045d39a87ce0623acc8faafc7a23350cd38cf8e81e53cc62015e3105ddde00"
+    },
+    {
+      "path": "application/ui/src/features/annotator/tools/edit-polygon/utils.ts",
+      "status": "modified",
+      "sha256": "5c19f402eb7402376a0ded11b39300bbec8bc46d33ca13956ae4750aa6538c65",
+      "size_bytes": 875,
+      "base_sha256": "d834282eea906554d12ccc723c51b4fbf39898a0ee41efb76fdb5855e3833b71"
+    },
+    {
+      "path": "application/ui/src/features/annotator/tools/execute-with-timeout.ts",
+      "status": "modified",
+      "sha256": "ea815401333cbc8a38b9d441f79ae846f14bbe46c7b0efeabf913b7d1b55556d",
+      "size_bytes": 1057,
+      "base_sha256": "a11d945eeb47c4fb6ee0be60003f504f918dd85e595e8a64a31ff37b6365f6ce"
+    },
+    {
+      "path": "application/ui/src/features/annotator/tools/magnetic-lasso/magnetic-lasso.component.tsx",
+      "status": "modified",
+      "sha256": "b64fb4a065d342262adc18e516a76024aa63624c9fe7e46576972ce38c66cdf9",
+      "size_bytes": 8761,
+      "base_sha256": "06d99a9d6edc5c83b544a13a8f8e3cce861b5e1fc6a04841c7cb337424e744bc"
+    },
+    {
+      "path": "application/ui/src/features/annotator/tools/polygon-tool/polygon-tool.component.tsx",
+      "status": "modified",
+      "sha256": "5b5288f6e35f6a06aaa31b991b023f9e434128d5fb6ac029ee6616d015dd7c32",
+      "size_bytes": 6478,
+      "base_sha256": "a511d21316bcf89bb8afc689356739cde973e49b37674f8ffdfdb2842a0b0ca3"
+    },
+    {
+      "path": "application/ui/src/features/annotator/tools/segment-anything-tool/sam-loading.component.tsx",
+      "status": "modified",
+      "sha256": "2e69cc93c341bb70d9b0a0fa347ec2f82feebf19d5820f61537ed01d2bd6ce28",
+      "size_bytes": 1399,
+      "base_sha256": "4421c4cfea2dea336fdef05ec50852ae5e1f1e4e379fac9a7f70b67ef7204499"
+    },
+    {
+      "path": "application/ui/src/features/annotator/tools/segment-anything-tool/segment-anything-tool.component.tsx",
+      "status": "modified",
+      "sha256": "1aebbd5bd28d3eca4e39e7d046c928904ee786fc8cd77dd32b731a7046e50b79",
+      "size_bytes": 6828,
+      "base_sha256": "196e5b4c1770750f24d5d317c5823629d90085958fc0d834d36de2522c31b715"
+    },
+    {
+      "path": "application/ui/src/features/annotator/tools/segment-anything-tool/use-segment-anything.hook.ts",
+      "status": "modified",
+      "sha256": "8e40de9d145a7494f3b6ce3937aaaee194176779f907be01ffb51b0041c18e62",
+      "size_bytes": 10884,
+      "base_sha256": "8ea18d9f0c333a4dea48a5b039f58498fdf696b1ddc66f5645b0eb94f1c69314"
+    },
+    {
+      "path": "application/ui/src/features/annotator/tools/ssim-tool/ssim-tool.component.tsx",
+      "status": "modified",
+      "sha256": "4b20ede65a41b8d4ff6ca3bf9e69bd533b1ec08d47385aa41efd4ee93bb8c071",
+      "size_bytes": 4597,
+      "base_sha256": "e86803296049fb2f033e908974093364c265c144e02a9d81e2eaa87843b7e4ef"
+    },
+    {
+      "path": "application/ui/src/features/annotator/tools/svg-tool-canvas.component.tsx",
+      "status": "modified",
+      "sha256": "313ce1719996fe3b13c5c867e73fa740f6dbd3cd0ec9d1d93e88ec274a545a79",
+      "size_bytes": 1292,
+      "base_sha256": "78d1da0380d7d813516cbcd54c9c1b1fabddda1aaf6b495d1ab0a22067ead98a"
+    },
+    {
+      "path": "application/ui/src/features/annotator/tools/tool/tool.component.tsx",
+      "status": "modified",
+      "sha256": "0a5e6436d779aa1ca8f70d8e3cc8947059bd887c8ff3dd492e10ebb53e2425ef",
+      "size_bytes": 2851,
+      "base_sha256": "cb1c2b02c365c9d8f93a53c70fff07fbc309f606d753b9f5f3216f20884a2afb"
+    },
+    {
+      "path": "application/ui/src/features/annotator/tools/utils.ts",
+      "status": "modified",
+      "sha256": "12e759a4196bd49bdae8108bbc4d268e89457889ac99089c16660fe9f600a651",
+      "size_bytes": 17638,
+      "base_sha256": "cf3f0122deee1f16bc187e6668d6359d9ca6e50533220813e0a096d1e2b5eb12"
+    },
+    {
+      "path": "application/ui/src/features/annotator/video-player/use-video-controls.ts",
+      "status": "modified",
+      "sha256": "b9c2bc8a0f49d3f6d75222e6ddd684f560a2a66290a0489d68ea397abc9481f4",
+      "size_bytes": 4038,
+      "base_sha256": "ff3b41a76d1796dd17b82cae7f191b73d41dcd23758546bda8377a6a9e06e9f7"
+    },
+    {
+      "path": "application/ui/src/features/annotator/video-player/video-player-error.ts",
+      "status": "modified",
+      "sha256": "0357483ecd0ad145bdc7a474d27fe5791fff66ed9a9e921bc37f57e014f81da2",
+      "size_bytes": 1470,
+      "base_sha256": "df292c8b47fd0b68508ba397c350cc0db18e6ad114fce0ef3fce064b75b8435d"
+    },
+    {
+      "path": "application/ui/src/features/annotator/video-player/video-toolbar/frame-step/frame-step.component.tsx",
+      "status": "modified",
+      "sha256": "955ee9855e3b77fb76ad229e4ca3884bdfceb45565ff5feef6a14ad0cb801dcd",
+      "size_bytes": 2071,
+      "base_sha256": "ca0b5975b56da34093d57c52f57737166a6e9693ebb879cf2f4835a66dab8fa0"
+    },
+    {
+      "path": "application/ui/src/features/annotator/video-player/video-toolbar/playback-rate.component.tsx",
+      "status": "modified",
+      "sha256": "d10c6a28a40db73d6c4890509cfc834e71dc7fce82d6de08aa6c2c58ac4dccd6",
+      "size_bytes": 2451,
+      "base_sha256": "cf15f4910d0a1b9e4811b2546056b5e25678ab208df971585544219e7a6a89e1"
+    },
+    {
+      "path": "application/ui/src/features/annotator/video-player/video-toolbar/video-annotator/video-timeline/video-frame-segment/video-frame-segment.component.tsx",
+      "status": "modified",
+      "sha256": "a7ce2562082f20071e1548d7af7a6e13937e091201b55ef5fc13ecfc99947e62",
+      "size_bytes": 8784,
+      "base_sha256": "1dc70358e3004793fb72e7b73c1b7f7a1d2cd39fdbfed2e3521a38159c57ecf8"
+    },
+    {
+      "path": "application/ui/src/features/annotator/video-player/video-toolbar/video-annotator/video-timeline/video-frame-segment/video-frame-segments.component.tsx",
+      "status": "modified",
+      "sha256": "bf440537acd30b9ba5c5cdc00682c715bfbcd5f6e5e4f3a4bd31edafeff227b1",
+      "size_bytes": 3036,
+      "base_sha256": "d4927736b5b4bebf7dacdf35c2f912fe069bdb031c6ad5e445f3b5a5dc8dda15"
+    },
+    {
+      "path": "application/ui/src/features/annotator/video-player/video-toolbar/video-annotator/video-timeline/video-player-slider/thumbnail-preview.component.tsx",
+      "status": "modified",
+      "sha256": "84b49f4a5d88af6266327d10344aff5d0826539c8b96c046f44eee09c50bd2bd",
+      "size_bytes": 2463,
+      "base_sha256": "3f6343f0c52f7a8ae74450ce8c2d50f0c40ca08b96fbc749a0087b58b2832009"
+    },
+    {
+      "path": "application/ui/src/features/annotator/video-player/video-toolbar/video-annotator/video-timeline/video-player-slider/video-player-slider.component.tsx",
+      "status": "modified",
+      "sha256": "853e9725653eedf16676da1cf2c419ff88afb33fcec8ccd44abd69a755a52275",
+      "size_bytes": 6053,
+      "base_sha256": "cb28d54859f490e8ab93fcff8926f466d6f4e1cb7883503655fa01a760f66234"
+    },
+    {
+      "path": "application/ui/src/features/annotator/video-player/video-toolbar/video-annotator/video-timeline/video-player-slider/video-slider.component.tsx",
+      "status": "modified",
+      "sha256": "c3d100738b03d86d8b5ab8dcb8f175b54faa158d5e46e0f130e411d6b687131e",
+      "size_bytes": 5473,
+      "base_sha256": "d95995f2c2212b2780829fe26290955d53c85bfc01bdfaddd85eac2ca5872c67"
+    },
+    {
+      "path": "application/ui/src/features/annotator/video-player/video-toolbar/video-controls.component.tsx",
+      "status": "modified",
+      "sha256": "28a3c0436cec544f227c361054e8249cecbadd083006f24e0708a76678532d0e",
+      "size_bytes": 2948,
+      "base_sha256": "111a774a6d730916d9eaa79587550c7937917913f232e4f3e2e9a901b7e73644"
+    },
+    {
+      "path": "application/ui/src/features/annotator/video-player/video-toolbar/video-duration.component.tsx",
+      "status": "modified",
+      "sha256": "b5f17c83e8dc2c6ab0c93a0b259734510973a3c728807e85f5f0758df317f22d",
+      "size_bytes": 740,
+      "base_sha256": "4d7d0b354f8e60e4eaea9bfb288a9968b6da6f183aec08673ada1b7eedfaac75"
+    },
+    {
+      "path": "application/ui/src/features/annotator/video-player/video-toolbar/video-toolbar.component.tsx",
+      "status": "modified",
+      "sha256": "91a36c5d5a409b90486e2ee9a606bd9ca26b9c1bb049e115fb0649347f9b499d",
+      "size_bytes": 4767,
+      "base_sha256": "b2b5c33a2c7d317bf8e931fabb7e1398b014f2c711671c175213034073679fcb"
+    },
+    {
+      "path": "application/ui/src/features/dataset/api/use-delete-media-item.ts",
+      "status": "modified",
+      "sha256": "a512c3860402e925524a073d082e4f1755f5bff7d605ca0d26ced36795cde060",
+      "size_bytes": 2981,
+      "base_sha256": "1595130813140fc397a2cfb0779d0f1324561e34d7a70dd17b84ede210960358"
+    },
+    {
+      "path": "application/ui/src/features/dataset/gallery/active-filters/active-filters.component.tsx",
+      "status": "modified",
+      "sha256": "5b9bf0a3ee3400b8c03528d08b739f3caa9b49e2103f01a6102fce12d98c42b5",
+      "size_bytes": 3996,
+      "base_sha256": "757af808affdd2ca6a26dd5858331ee944853c1ed143169a38bb5c0771740ecd"
+    },
+    {
+      "path": "application/ui/src/features/dataset/gallery/bulk-labels-assignment/api/use-bulk-assign-label.ts",
+      "status": "modified",
+      "sha256": "055a87ef39305b5e41a8f92b45f9111fc032c107c3b4e3aa0ad847e2a8705ad9",
+      "size_bytes": 3402,
+      "base_sha256": "bda3a82bd2a7ee4d58225c5aacc1b9ac281a16c1b8e21ae7051cb19142dacd7a"
+    },
+    {
+      "path": "application/ui/src/features/dataset/gallery/bulk-labels-assignment/bulk-labels-assignment-dialog.component.tsx",
+      "status": "modified",
+      "sha256": "f2c762d8c25fb72c690b615c5bc64bfbd263ba4eddb6d08992f8e8dd1fd9b1fb",
+      "size_bytes": 5320,
+      "base_sha256": "1ac7989984db1ea86c938e6304498290225d52461b27c9475e9870516febcba2"
+    },
+    {
+      "path": "application/ui/src/features/dataset/gallery/bulk-labels-assignment/bulk-selected-media-labels-assignment-dialog.component.tsx",
+      "status": "modified",
+      "sha256": "0550b1a0886a844848bffad3078aa8b04c576930d509d026570458bac2431c0f",
+      "size_bytes": 3892,
+      "base_sha256": "d3dd585af04567fc604cb50af2a653c5a050e5c5d87e22d59cbe1753ce4a2bb7"
+    },
+    {
+      "path": "application/ui/src/features/dataset/gallery/bulk-labels-assignment/labels-list/labels-list.component.tsx",
+      "status": "modified",
+      "sha256": "355ea60de82dd6599c209ff56b7e0bca2a14f6df2c448315a57a678713c8daaf",
+      "size_bytes": 2911,
+      "base_sha256": "7db02fb88312af6137de36c8ea66fa18cf2ad7c06cbfcb4956d8b952db68f8fd"
+    },
+    {
+      "path": "application/ui/src/features/dataset/gallery/delete-media-item/alert-dialog-content.component.tsx",
+      "status": "modified",
+      "sha256": "5ab017556871a7483204e68a6aae94b80717e1562321afb6f862eb2565249f87",
+      "size_bytes": 1023,
+      "base_sha256": "cc61f4754f3bd6d18853c90e2a9c7fba4ab91df67af9b28220931ac1358310f7"
+    },
+    {
+      "path": "application/ui/src/features/dataset/gallery/delete-media-item/delete-media-item.component.tsx",
+      "status": "modified",
+      "sha256": "35fdb94707f9bb854d01d98561c206d977a5ceeb2611744d57d4790e7057f87c",
+      "size_bytes": 1572,
+      "base_sha256": "1a5b800f4f21672ae403bebc8c5cd6cc233e5e3a0dd950953a645a0095b0afcb"
+    },
+    {
+      "path": "application/ui/src/features/dataset/gallery/drop-zone.component.tsx",
+      "status": "modified",
+      "sha256": "0b2aa2225acba7a8ca6c61379450e9f3c57ed65e1c07d28b871abccee914b0b6",
+      "size_bytes": 2224,
+      "base_sha256": "182a88542947cc548bbe892ea7f6fe597d9d4c08f6fc627761ce49571098a621"
+    },
+    {
+      "path": "application/ui/src/features/dataset/gallery/empty-dataset.component.tsx",
+      "status": "modified",
+      "sha256": "0b4d66cfb8a1cf4ff59675441f68cadfbaf62201a6d32b5dc0e1a498883410f1",
+      "size_bytes": 3057,
+      "base_sha256": "4007b2762b7cb99a4758d6367572e5a391447dac8ca19e0825509315c06b8480"
+    },
+    {
+      "path": "application/ui/src/features/dataset/gallery/gallery.component.tsx",
+      "status": "modified",
+      "sha256": "39f125430342d881f646447c73e2dd5fc3296aefa92a6867feb36545939ef907",
+      "size_bytes": 8135,
+      "base_sha256": "5e557103d552b595835ddd6ae25d1675818a0df21e9a9070870a1671922f48da"
+    },
+    {
+      "path": "application/ui/src/features/dataset/gallery/media-item-actions/media-item-actions.component.tsx",
+      "status": "modified",
+      "sha256": "5b676b6f20f0670ef827ae3697aa0f56a5359156f40e98a75cdf57becc5c4619",
+      "size_bytes": 2309,
+      "base_sha256": "b12aa0d3c88cc74d23c0291ba09fde069e8ab30ac04bcf44d04994c9e1f6d59d"
+    },
+    {
+      "path": "application/ui/src/features/dataset/gallery/media-item-contextual-help/media-item-contextual-help.component.tsx",
+      "status": "modified",
+      "sha256": "75be0b38c44f39bbecda62d6dbba9e0efe74261b0f4f8b040d251cd442d8fa37",
+      "size_bytes": 1385,
+      "base_sha256": "e7a14ef5927ea487ee5f919abefc46f4f39551e63e9997997e092fd29c759a02"
+    },
+    {
+      "path": "application/ui/src/features/dataset/gallery/toolbar/add-media-button/add-media-button.component.tsx",
+      "status": "modified",
+      "sha256": "0ed4897dee3f3a60c6c3a158df70fdbc97df35b314089e30a14d23cba2d7c1b6",
+      "size_bytes": 1036,
+      "base_sha256": "ee21d9bc10bf54d3bcde38bcc140972f7ad709c34f6b0243a3b6eaa01c6ce899"
+    },
+    {
+      "path": "application/ui/src/features/dataset/gallery/toolbar/assign-label.component.tsx",
+      "status": "modified",
+      "sha256": "a7fe20dd51974701f6e0b1181269351669278225ba47cbb6855522e891018e9e",
+      "size_bytes": 1586,
+      "base_sha256": "b1cc4e5badcd54316cbe8bb495660321f2450dc0a526d6ee8f95b00a581f22fc"
+    },
+    {
+      "path": "application/ui/src/features/dataset/gallery/toolbar/dataset-statistics/dataset-card.component.tsx",
+      "status": "modified",
+      "sha256": "f7a968cf5b555b31b687de662d0a5f04b8ae903beeab978f6fec200802816a1d",
+      "size_bytes": 2544,
+      "base_sha256": "499b4743e7a55a10d5a3767c2f9a5333c00244dcc482e49526f191c954bffa39"
+    },
+    {
+      "path": "application/ui/src/features/dataset/gallery/toolbar/dataset-statistics/dataset-labels-chart.component.tsx",
+      "status": "modified",
+      "sha256": "04eaa38da0f4beff4977a1f4e3dbba2433328e9609da6272b2610fb1353e1fb3",
+      "size_bytes": 4766,
+      "base_sha256": "c7849955192284ff1f369f04db534d0cb7d6aa9bf7f6fcc8ff4106097b3d69f0"
+    },
+    {
+      "path": "application/ui/src/features/dataset/gallery/toolbar/dataset-statistics/dataset-statistics-content.component.tsx",
+      "status": "modified",
+      "sha256": "af24559ef9c3cf6627ed2a69a5a3fcc063b9380f0ae2fd4d47248b9d5a2e4511",
+      "size_bytes": 4720,
+      "base_sha256": "c23beec664ef733cf9f575f557b8e3d2bbce640d988c74e9a077e5ed63140c5a"
+    },
+    {
+      "path": "application/ui/src/features/dataset/gallery/toolbar/dataset-statistics/dataset-statistics.component.tsx",
+      "status": "modified",
+      "sha256": "332666a68fef9552c6507d79fa07fb3af0b535344d680a06c8d39d6f44574b90",
+      "size_bytes": 1537,
+      "base_sha256": "15c124da8a4d03e90a5daadd5084e76897e478da60a8a2f079597c72f32e7627"
+    },
+    {
+      "path": "application/ui/src/features/dataset/gallery/toolbar/dataset-view-selector/assign-to-existing-view/assign-to-existing-view.component.tsx",
+      "status": "modified",
+      "sha256": "fba8835d44c24a1f10e5acd776733be65931d5fd63f3dd6ad2eec80234fb8b0b",
+      "size_bytes": 7317,
+      "base_sha256": "7bfea3be00b530f750ba62317592f55c16ba14e7b53671c9089f3947cefe3cdd"
+    },
+    {
+      "path": "application/ui/src/features/dataset/gallery/toolbar/dataset-view-selector/dataset-view-items-list/dataset-view-items-list.component.tsx",
+      "status": "modified",
+      "sha256": "6e25dd6c3f92d450dd5f3b51cd8c773dfdccf5ee017179f14f049ff333cb8986",
+      "size_bytes": 5207,
+      "base_sha256": "872892bf3b70939f9b1f67761a27f3af6318de577a3eb6ef61f3c718eea1fc88"
+    },
+    {
+      "path": "application/ui/src/features/dataset/gallery/toolbar/dataset-view-selector/dataset-view-selector.component.tsx",
+      "status": "modified",
+      "sha256": "0230ce4d0384fd918d0684799538638a6b39879d8ac0397945cafa735a36c8c4",
+      "size_bytes": 6441,
+      "base_sha256": "43db81d5371b94276e54bf63fe78feeb4bf9302669e2f3ff154404c9862616d9"
+    },
+    {
+      "path": "application/ui/src/features/dataset/gallery/toolbar/dataset-view-selector/delete-dataset-view.component.tsx",
+      "status": "modified",
+      "sha256": "236088b2d8e70562c91440479800740c4ae467602dce05255a2fe52136ce8055",
+      "size_bytes": 2460,
+      "base_sha256": "2d467d0134a1f84a5fca51387a09817f12afb48df2e074143c76b23cf79ecab8"
+    },
+    {
+      "path": "application/ui/src/features/dataset/gallery/toolbar/dataset-view-selector/rename-dataset-view.component.tsx",
+      "status": "modified",
+      "sha256": "cdf1bcd07c6e237906921cb3725eccea35db3f2642da7faba4f1b805a01aace9",
+      "size_bytes": 2948,
+      "base_sha256": "f0472dfd9bc4dfe85412e2d0d540d337c984455351d84b3aaf8c549174855882"
+    },
+    {
+      "path": "application/ui/src/features/dataset/gallery/toolbar/dataset-view-selector/save-dataset-view/save-dataset-view.component.tsx",
+      "status": "modified",
+      "sha256": "8a0ad5ac0158c586fd9d6853e0559085cce1bf127258686625dd8d4cfd34fdc2",
+      "size_bytes": 4615,
+      "base_sha256": "ba434bc82f2469a53d210bfac2dbf8324932c772114896c9edbba8a0e48bbc62"
+    },
+    {
+      "path": "application/ui/src/features/dataset/gallery/toolbar/dataset-view-selector/selected-media-count/selected-media-count.component.tsx",
+      "status": "modified",
+      "sha256": "afcc9565bf52680c78e6e92015bf3320298f49b5e4161764990ded3cb9a2c751",
+      "size_bytes": 612,
+      "base_sha256": "25f32cb964ef0094f7e75db9dab1d3175aa8152fa44b56fad23519eec46bf109"
+    },
+    {
+      "path": "application/ui/src/features/dataset/gallery/toolbar/dataset-view-selector/unassign-media-from-view/unassign-media-from-view.component.tsx",
+      "status": "modified",
+      "sha256": "a524fcbc03941e0086e3269395c744ddab0774dcacde0b9a1c42e429de5ff0c5",
+      "size_bytes": 3772,
+      "base_sha256": "cbc82a65fb9a4b03cb6b00236363a02a3de3a1ffcc46119fb397a74e06c7b5cb"
+    },
+    {
+      "path": "application/ui/src/features/dataset/gallery/toolbar/dataset-view-selector/util.ts",
+      "status": "modified",
+      "sha256": "c61b11fce21e057a581db89d98d32cf1650125d8d037c3e9628599412205399b",
+      "size_bytes": 272,
+      "base_sha256": "e6f9ffa9f2ff34825294c79523f8bb572416c83b92a80953a9c32c69b1cf4dc3"
+    },
+    {
+      "path": "application/ui/src/features/dataset/gallery/toolbar/media-filtering/annotator-media-filtering.component.tsx",
+      "status": "modified",
+      "sha256": "bf7ed4cbd6c5cc2e10bd13f23582566a9da6f53cc3342dbb2b4a23a21ef9b862",
+      "size_bytes": 1560,
+      "base_sha256": "e5282406b11795c8c35df07ef8f8e462b403701ac12c851d055b6770a0dcbabb"
+    },
+    {
+      "path": "application/ui/src/features/dataset/gallery/toolbar/media-filtering/date-filter/date-filter.component.tsx",
+      "status": "modified",
+      "sha256": "64df3f9997ef5ec41855a57c57a7c288b493533db59951273458be4755723f28",
+      "size_bytes": 4854,
+      "base_sha256": "c3d3598487639739db887a4dcbd168b2d75e2c76a3a62c194e53f1649927a6ca"
+    },
+    {
+      "path": "application/ui/src/features/dataset/gallery/toolbar/media-filtering/filter-by-status/filter-by-status.component.tsx",
+      "status": "modified",
+      "sha256": "7fc56ec63fb703a15f8d7ab59f16be1becf4f8e08b49c9e95beed2e60e1357f8",
+      "size_bytes": 1229,
+      "base_sha256": "f25af5a4590c0f7273d96d92dbe70681726be04e09cd103bcab2511856bf5fda"
+    },
+    {
+      "path": "application/ui/src/features/dataset/gallery/toolbar/media-filtering/filter-by-subset/filter-by-subset.component.tsx",
+      "status": "modified",
+      "sha256": "eb9338a8e967c638d1d6352d9a345c89e86c0878686663d13715948da6f2846c",
+      "size_bytes": 1500,
+      "base_sha256": "e3196cc026b3b7cbdbc893c5e57b5a0acb8c1f9f3b405392f35e1f2ca1b8eabf"
+    },
+    {
+      "path": "application/ui/src/features/dataset/gallery/toolbar/media-filtering/filter-chips/filter-chips.component.tsx",
+      "status": "modified",
+      "sha256": "fc95d4a3539fecd749d2191b984516ca1f0d81721edd8fc0cc02b65f14db944d",
+      "size_bytes": 1020,
+      "base_sha256": "69ea9fac0eea58d5949e916e7dcfa63d3c51a7f547a458a056f1c3809a190236"
+    },
+    {
+      "path": "application/ui/src/features/dataset/gallery/toolbar/media-filtering/media-filter-labels/media-filter-labels.component.tsx",
+      "status": "modified",
+      "sha256": "6fab284ccd202ea93cb74b3a1a31b668224eb4e6fbc27712026d66f45a2b1656",
+      "size_bytes": 1620,
+      "base_sha256": "5fb23aaada9c755fe09d14ae5387aedbaecc856de251d61a2e53c4863489b5a3"
+    },
+    {
+      "path": "application/ui/src/features/dataset/gallery/toolbar/media-filtering/more-dataset-media-filters.component.tsx",
+      "status": "modified",
+      "sha256": "73460be4b87974430f5c87c3d485a1f705d06a3fa8eb589b81ba65cc5ba17787",
+      "size_bytes": 1290,
+      "base_sha256": "65196a46b2abc48ee880a2dd5d91862e4f073630d0921a275772ca6667c5d13d"
+    },
+    {
+      "path": "application/ui/src/features/dataset/gallery/toolbar/toolbar.component.tsx",
+      "status": "modified",
+      "sha256": "23f46d1d566ad162c6678bbd72636c6f6034763208b4c2d067b6cd0f48e74087",
+      "size_bytes": 9382,
+      "base_sha256": "eb46ddccc54645d181302f8b3e6bd9f51e9b7cab1ec060d9c479598f81489c10"
+    },
+    {
+      "path": "application/ui/src/features/dataset/gallery/toolbar/total-items.component.tsx",
+      "status": "modified",
+      "sha256": "a765369e44443e67e3c651a0bf58ab973d62fe303724c1cf72bdab60bc8f43bf",
+      "size_bytes": 1211,
+      "base_sha256": "51808debb064ce1d7f904a61803afa6b961f0d936ad51bc18cbcd23515574547"
+    },
+    {
+      "path": "application/ui/src/features/dataset/gallery/upload-details-dialog/upload-details-dialog.component.tsx",
+      "status": "modified",
+      "sha256": "89930fad37427a5a9e19dbab3fc4e552ffcf02a9c98fe65c698007ef6fa6cd55",
+      "size_bytes": 6507,
+      "base_sha256": "6a8fa144720ef437d54e1aeb18e1c515f610def0a98971f79ce03e432272f499"
+    },
+    {
+      "path": "application/ui/src/features/dataset/import-export/cancel-job-confirmation/cancel-job-confirmation.component.tsx",
+      "status": "modified",
+      "sha256": "9edfa164a4b33601e7715220ebacddd195eda867657d847b9992c59272fb2125",
+      "size_bytes": 2023,
+      "base_sha256": "98a391af86b6f3e06f8b35a56f92cd2f03e793e9d52fe5d1638b4c72ddccca02"
+    },
+    {
+      "path": "application/ui/src/features/dataset/import-export/export-dataset/dataset-statistics.component.tsx",
+      "status": "modified",
+      "sha256": "67a026f4d55ea8222391a85d37716a400e81463bf963814e9cd82de4ff98df11",
+      "size_bytes": 724,
+      "base_sha256": "17f3332c9a1005bea8258ebf3b3ac5fd1e50ceb7857e10f236017cb5286a9871"
+    },
+    {
+      "path": "application/ui/src/features/dataset/import-export/export-jobs-list/export-job/export-active-job.component.tsx",
+      "status": "modified",
+      "sha256": "9317e6bec58d1fd268f51f73260bbb98691edfd97c5a7047ddfda82427875c33",
+      "size_bytes": 2131,
+      "base_sha256": "90aa9dcc81b7d37b7e0d83ffe781aebfab076f7c3bfab99829154fc6e9119f9b"
+    },
+    {
+      "path": "application/ui/src/features/dataset/import-export/export-jobs-list/export-job/export-completed-job/export-completed-job.component.tsx",
+      "status": "modified",
+      "sha256": "b7beaa4227cc89aa18d287e73330b647ace7ba6ec1dac532e2b63940d373ce7d",
+      "size_bytes": 3279,
+      "base_sha256": "6a988bfa08092318fecf2726f616fc7ef9eb7bdcd79d618a88bcb51d46cfa63a"
+    },
+    {
+      "path": "application/ui/src/features/dataset/import-export/export-jobs-list/export-job/export-details/export-details.component.tsx",
+      "status": "modified",
+      "sha256": "e96e2a6f868649a5a61a3257133cc6b47eadbdc62598172306fdcb2dfe5ecff8",
+      "size_bytes": 2510,
+      "base_sha256": "fe72e62c59b92bde9d7b749100a4524121b0007ae59dda09912e6e4740158620"
+    },
+    {
+      "path": "application/ui/src/features/dataset/import-export/export-jobs-list/export-job/export-failed-job/export-failed-job.component.tsx",
+      "status": "modified",
+      "sha256": "2c8ff5c80c02328fbc38a4909df6b4cc9713126e052a3785d07ef1b49dc5b28c",
+      "size_bytes": 1598,
+      "base_sha256": "a6a7bfffa7ad0363cbaa7081356b1e9f5954bc0bd4588d77cb6923f40badae3b"
+    },
+    {
+      "path": "application/ui/src/features/dataset/import-export/import-dataset/Import-dataset-to-project.component.tsx",
+      "status": "modified",
+      "sha256": "2dfb1a87bc26d8aadd656391cb79de456e7591dec7e771773d1ebc1ca60ca0a5",
+      "size_bytes": 3113,
+      "base_sha256": "733079e5735200e38b98be34c974969a08c2e4e6fb83e9756947602802012f00"
+    },
+    {
+      "path": "application/ui/src/features/dataset/import-export/import-dataset/import-dataset-buttons/import-dataset-buttons.component.tsx",
+      "status": "modified",
+      "sha256": "83a20e3125ab596aeda0bf0c083717e076e5b64e5cb7dadc0f109f74c98dcbcf",
+      "size_bytes": 1900,
+      "base_sha256": "8c4c9a9195f00996317e97e3659be4c0b191978af8e6116288519b08052a0458"
+    },
+    {
+      "path": "application/ui/src/features/dataset/import-export/import-dataset/import-process/import-process.component.tsx",
+      "status": "modified",
+      "sha256": "4e28123f75262d5f48904ac7c7b333e63bbc3e8b750869c715cf833aae308994",
+      "size_bytes": 1367,
+      "base_sha256": "0d2ec089bf7f96eb38ba914aaf5fde2886665027e705058935e866b11ea2db1a"
+    },
+    {
+      "path": "application/ui/src/features/dataset/import-export/import-dataset/label-mapping/format-warning/format-warning.component.tsx",
+      "status": "modified",
+      "sha256": "41cb8907660b9f822513706e4eaff34517c0d7fa5191c6add02f3111080ab667",
+      "size_bytes": 1982,
+      "base_sha256": "dd16d5bdf169277d84dc05021ef594fac0494944483bc6d392f98bcad60f248d"
+    },
+    {
+      "path": "application/ui/src/features/dataset/import-export/import-dataset/label-mapping/label-mapping-buttons.component.tsx",
+      "status": "modified",
+      "sha256": "9c0ad00d02c71dcfde1a485b7b8d46983b40aa1ecba03f7861a7270202e388db",
+      "size_bytes": 1488,
+      "base_sha256": "184bd40c9a0623b3c5254022751d3dd401993632ce6e3c1ef44e2da774831765"
+    },
+    {
+      "path": "application/ui/src/features/dataset/import-export/import-dataset/label-mapping/label-mapping.component.tsx",
+      "status": "modified",
+      "sha256": "e51c490c9e837429e9d8c60e5241fd94968f4501d366f5524290c73cc519d9c8",
+      "size_bytes": 7233,
+      "base_sha256": "a072581b9ef819fb959750db7dfdabcd945c1a54627efc0daffd953f53c19cbf"
+    },
+    {
+      "path": "application/ui/src/features/dataset/import-export/import-dataset/label-mapping/util.ts",
+      "status": "modified",
+      "sha256": "0597cfde97016fa0742be50ac8153851a0f6ab5ac9d5a48688e03ad9755a0e76",
+      "size_bytes": 892,
+      "base_sha256": "217903dcf82a189344426ab3536abe2b2965134ce9f3cc4ad44b27b940edc929"
+    },
+    {
+      "path": "application/ui/src/features/dataset/import-export/import-export.component.tsx",
+      "status": "modified",
+      "sha256": "4c0a13a2689546762fac5b15f55917f8b83035268b0543910565a64e272f98f3",
+      "size_bytes": 1860,
+      "base_sha256": "3e81e30e9d09e1bd4f10b8c92f946dd90b6a2c3d4c4d1e90d90430ccaecc44bc"
+    },
+    {
+      "path": "application/ui/src/features/dataset/import-export/import-jobs-list/import-jobs-list.component.tsx",
+      "status": "modified",
+      "sha256": "16c36f14bc3aecd2967a942e822c95fb1493dc32f7167dbafc9161b515e86c98",
+      "size_bytes": 4441,
+      "base_sha256": "4c42f873ba03a9322ef0cc0f720ced3a84ce1844727baf6010211c334eb0230b"
+    },
+    {
+      "path": "application/ui/src/features/dataset/media-preview/annotator.component.tsx",
+      "status": "modified",
+      "sha256": "7fe09fbf9188a15e91e5354264e33ab57bb3493dc38fa2c0de29d0caf58a676a",
+      "size_bytes": 7661,
+      "base_sha256": "a02bbd03b0d145e976a6dbc3909c26f4cc512ec39056c13e7627577c6bdf130c"
+    },
+    {
+      "path": "application/ui/src/features/dataset/media-preview/bottom-toolbar/bottom-toolbar.component.tsx",
+      "status": "modified",
+      "sha256": "89eae1ec34e2ea29b17f774a51fe912b1d192918ec12da7f8d59bf2b57e3e73b",
+      "size_bytes": 4035,
+      "base_sha256": "f7a3453043fd5e0e9ab6e38b756db0ff833184c66dfeae5cc10e80165f731668"
+    },
+    {
+      "path": "application/ui/src/features/dataset/media-preview/primary-toolbar/hotkeys/hotkeys-list.component.tsx",
+      "status": "modified",
+      "sha256": "dcd450b65339346802164348b0afa54007894df2dd4522651c38b58397d0bb6a",
+      "size_bytes": 3051,
+      "base_sha256": "8ba79fbd6a19141c93d3737289732187c295e5144e4a91b316850cf0fd1869df"
+    },
+    {
+      "path": "application/ui/src/features/dataset/media-preview/primary-toolbar/hotkeys/hotkeys.component.tsx",
+      "status": "modified",
+      "sha256": "49e60dd4b7041532c441a0fe37f069d4c84883524df0fe048402c64420f961e5",
+      "size_bytes": 1549,
+      "base_sha256": "3e9d565e1a1d8e94c3a2e33667993619fdffcdac2bda4ab4b19d9656af94473b"
+    },
+    {
+      "path": "application/ui/src/features/dataset/media-preview/primary-toolbar/settings/annotation-setting.component.tsx",
+      "status": "modified",
+      "sha256": "2e43f9b86b195b7555304b27d42ca85cbeb9b67ac9242ab77c72875d63689419",
+      "size_bytes": 1206,
+      "base_sha256": "8434ad1348532c44cc93c8591547601e8a70b6c4a7f7222be54376268f5516b2"
+    },
+    {
+      "path": "application/ui/src/features/dataset/media-preview/primary-toolbar/settings/header-setting.component.tsx",
+      "status": "modified",
+      "sha256": "e502869091290d1c3e434a8431274038251fe1d88eeba88850428180bef7410e",
+      "size_bytes": 1370,
+      "base_sha256": "0678d8d6c545d315d1ade3f06fd5653647932cac1844d790fcfc1ab913e653d8"
+    },
+    {
+      "path": "application/ui/src/features/dataset/media-preview/primary-toolbar/settings/image-setting.component.tsx",
+      "status": "modified",
+      "sha256": "d9c73a8b88660de443f76686802b56143a7e75cd0bb92d296f98c9156115e441",
+      "size_bytes": 1081,
+      "base_sha256": "cc7e9fa9b66c8fecccc7b5e97aac5a635d14a0e89871fc5fccd41d7f7e6fbcfc"
+    },
+    {
+      "path": "application/ui/src/features/dataset/media-preview/primary-toolbar/settings/settings-list.component.tsx",
+      "status": "modified",
+      "sha256": "a7df661ca563ed4b36cbd41d4122f1889ab7a03deb82d4bf5cc184d3fbd59b6d",
+      "size_bytes": 4538,
+      "base_sha256": "9276bf9ede63a6af269323e7f7d93aa37f627bccb7cc74a215cf0a34ff491030"
+    },
+    {
+      "path": "application/ui/src/features/dataset/media-preview/primary-toolbar/settings/settings.component.tsx",
+      "status": "modified",
+      "sha256": "34b2f3ae450bd7cf41ce48b06a1c5154a0f216423a20b59a36087e3eb7970246",
+      "size_bytes": 1554,
+      "base_sha256": "12ea135e15a096f268103792d0e1b1857ede68276b7061cf384344a4523e44af"
+    },
+    {
+      "path": "application/ui/src/features/dataset/media-preview/primary-toolbar/toggle-annotations-visibility.component.tsx",
+      "status": "modified",
+      "sha256": "bd5a61b3ba49d5997ad0d0796843112559f90372953743d8c2620da8263a4043",
+      "size_bytes": 1163,
+      "base_sha256": "8588db0bd617902bfb237931a5e8f8f44e8c9969f34d70e914ab1b0b039179bd"
+    },
+    {
+      "path": "application/ui/src/features/dataset/media-preview/primary-toolbar/toggle-focus.component.tsx",
+      "status": "modified",
+      "sha256": "003afc6c788adc1853b746d70a316dca6e6f4d3bfec26f85e4fbb724cb98e4bd",
+      "size_bytes": 904,
+      "base_sha256": "2cfb282162436102dc7413f42f65013c5dad0b44122b2de62509ad23528b17c8"
+    },
+    {
+      "path": "application/ui/src/features/dataset/media-preview/primary-toolbar/undo-redo/undo-redo.component.tsx",
+      "status": "modified",
+      "sha256": "5b056660af140c09eaf99e23383e2964ebd491b52153509e8f4eae21f64ce9bf",
+      "size_bytes": 1910,
+      "base_sha256": "baf407ab609a5a73c33eae939f4dbd13ba95d80ccf4adaeff065058243905b91"
+    },
+    {
+      "path": "application/ui/src/features/dataset/media-preview/primary-toolbar/zoom/zoom-fit-screen.component.tsx",
+      "status": "modified",
+      "sha256": "21ca2216e582a794b3f0f1509da7f69b89b7ce7068f3e238c16c63395031fc7c",
+      "size_bytes": 1008,
+      "base_sha256": "9a11e5b3a4bf261dc482822155fa8732b10efb46cd4f1bb74e92da3860874f04"
+    },
+    {
+      "path": "application/ui/src/features/dataset/media-preview/primary-toolbar/zoom/zoom-selector.component.tsx",
+      "status": "modified",
+      "sha256": "30c51235fcbb1ff8cd6e0e9b99b278eb9e05555a80435689563f384f878cf2c7",
+      "size_bytes": 1938,
+      "base_sha256": "767a741d6bf56ccfaa070fa66c10a05fb2ab1f1bd27fb880a0f85435d07bc188"
+    },
+    {
+      "path": "application/ui/src/features/dataset/media-preview/read-only-annotator.component.tsx",
+      "status": "modified",
+      "sha256": "21e1c93fa5e4a550e3c502642881aa9d7e2da99d0dfbccc0dbeb47d9ee36de32",
+      "size_bytes": 6450,
+      "base_sha256": "061efea44400b466df547531aacd54656452024275662550ee14315421026e6f"
+    },
+    {
+      "path": "application/ui/src/features/dataset/media-preview/secondary-toolbar/annotator-modes/annotator-modes-toggle.component.tsx",
+      "status": "modified",
+      "sha256": "7eaa2f41438bca1e1891f942f1d21d0f1876c4c9642a2e0131b3e080c7993dc3",
+      "size_bytes": 3728,
+      "base_sha256": "f21145fd5f9eafbc9708c5f752a9ed7d3824327595238cfbff44d44658caa242"
+    },
+    {
+      "path": "application/ui/src/features/dataset/media-preview/secondary-toolbar/prediction-inference-devices/prediction-inference-devices.component.tsx",
+      "status": "modified",
+      "sha256": "6c074796ad04867fc91954be79859846ec0ef4b1a955549a8de2f3a8dd4048b3",
+      "size_bytes": 985,
+      "base_sha256": "8271c9cda0a08efd94d2f5019a877c19450464ccf92771aa4b50bd2c1aefd038"
+    },
+    {
+      "path": "application/ui/src/features/dataset/media-preview/secondary-toolbar/prediction-model-selector/prediction-model-selector.component.tsx",
+      "status": "modified",
+      "sha256": "7fc31c7869c06510b09f2d5ecf644ef60866bfd148e998b8288deabb634d1de3",
+      "size_bytes": 1086,
+      "base_sha256": "2253ee2c112ec1d2828a4b53a1a38ce80eed7dcdf99dda3c821b06b462045e8b"
+    },
+    {
+      "path": "application/ui/src/features/dataset/media-preview/secondary-toolbar/predictions-buttons.component.tsx",
+      "status": "modified",
+      "sha256": "5ac5beb26b9ac5b00dd36ff46e77a91f2e8e54eb02cf88b6320b00ca15144309",
+      "size_bytes": 1780,
+      "base_sha256": "8187b4420af5818258a89e5dcf735fa449a3cbfe6446ce703d4cc66eece0b882"
+    },
+    {
+      "path": "application/ui/src/features/dataset/media-preview/secondary-toolbar/secondary-toolbar.component.tsx",
+      "status": "modified",
+      "sha256": "558f460da8d385fa4060a5cd29be9791ffe8acd54fe9b9b07de7b4dff9651ef6",
+      "size_bytes": 9912,
+      "base_sha256": "088f0baa4963b6c9eb925d86e929319529cb85361b856edf44f457ef67fab33e"
+    },
+    {
+      "path": "application/ui/src/features/dataset/media-preview/sidebar-items/sidebar-items.component.tsx",
+      "status": "modified",
+      "sha256": "4496b9c472c1c7a30ad3ffbc820c7fbb39a5fdacca63cbc2d9098688eae50314",
+      "size_bytes": 3038,
+      "base_sha256": "a10c840292493f6a53608521903bc215e2c9ab9f20ce518222ed28f82c674f9b"
+    },
+    {
+      "path": "application/ui/src/features/dataset/media-preview/sidebar-items/sidebar-media-filtering.component.tsx",
+      "status": "modified",
+      "sha256": "1051e26fe1d091fddf62ced1a4803424118de64da2bd4e6424edd8d660434f1c",
+      "size_bytes": 2249,
+      "base_sha256": "e2742fe68e942478661c36f49e55f70d51abab95d0e9e6cc044bda5b728bc5d6"
+    },
+    {
+      "path": "application/ui/src/features/dataset/providers/media-upload-provider.component.tsx",
+      "status": "modified",
+      "sha256": "8ffed588d57cfd51f0adeb7453209e8c48581de3fb19a86f90725572e206e712",
+      "size_bytes": 4564,
+      "base_sha256": "1a9b212a309fe9419ed74524678013b857b08d9d44a20ef556e14206a9fdcddd"
+    },
+    {
+      "path": "application/ui/src/features/inference/aside/data-collection.component.tsx",
+      "status": "modified",
+      "sha256": "78ee47eb816e8d26df59b5d86698a106628b3abb1e54cec26389f96ca7fef590",
+      "size_bytes": 7235,
+      "base_sha256": "06fdfcf8359ec67efa09df83e11eee3175e25b83c278ec7dc602c3c00dadf0ab"
+    },
+    {
+      "path": "application/ui/src/features/inference/aside/graphs.component.tsx",
+      "status": "modified",
+      "sha256": "9dbdda2e70412bd27981567da8feced70ef2a8e7ff620375a92dad5913d216d8",
+      "size_bytes": 4613,
+      "base_sha256": "cd6f323892abd6dd4d9c1259c48dc1df3874143eadc2ea6f83215248fd316ea5"
+    },
+    {
+      "path": "application/ui/src/features/inference/aside/pipeline-configuration.component.tsx",
+      "status": "modified",
+      "sha256": "83064d5e72e4b4ef21158b591879f79f65d96a66100d9d84b395a5863e59891b",
+      "size_bytes": 2430,
+      "base_sha256": "25c1a7efad63e32e3f946e05fae6dd0147111411287defb41ce303ab48599f37"
+    },
+    {
+      "path": "application/ui/src/features/inference/aside/sidebar-tabs.component.tsx",
+      "status": "modified",
+      "sha256": "0514f9552733ae5127ece261cc6a4c31e6c0fb6955b6d23091024c87ab7963f6",
+      "size_bytes": 3551,
+      "base_sha256": "cfa3b2788bc6886c0cc2f1d53218e899f57226cbfaf784f18161759469084896"
+    },
+    {
+      "path": "application/ui/src/features/inference/aside/stream-inference-devices.component.tsx",
+      "status": "modified",
+      "sha256": "b907cfc68352bd41e5b362a2731d34d699e26305bc157c1479c1cd55494b58c2",
+      "size_bytes": 1255,
+      "base_sha256": "abc4f39367466c4b49dac7b1ea726141fb43a5db4c89d20a34ca2ca2462fa950"
+    },
+    {
+      "path": "application/ui/src/features/inference/footer/pipeline-health.component.tsx",
+      "status": "modified",
+      "sha256": "a03c17c77edf7dec0eebdbb7897a20454824ff402af9890b7950c65f98367850",
+      "size_bytes": 3090,
+      "base_sha256": "d838c79408276888070151e09c1f15613da60d2962c1e7a9de735bb1e5fd0f69"
+    },
+    {
+      "path": "application/ui/src/features/inference/footer/utils.ts",
+      "status": "modified",
+      "sha256": "e04049123d61fc6fb86f7cff876a0e4b8c91b61b0d147deae582861d0efbede7",
+      "size_bytes": 2006,
+      "base_sha256": "a73697f4b1fc5ca1e7894608296c71a96554ca1ffbda8418d7de4fb70052aa42"
+    },
+    {
+      "path": "application/ui/src/features/inference/header/active-model.component.tsx",
+      "status": "modified",
+      "sha256": "a90668990815b0176089403cf8260f02894ff7ee2fd9e9fae12161d29a3ad7f9",
+      "size_bytes": 2076,
+      "base_sha256": "910c1243d23aedb23b207308ce3feee2a95476c75359a5b0226c78cb6afb0e6e"
+    },
+    {
+      "path": "application/ui/src/features/inference/header/toggle-pipeline-button.component.tsx",
+      "status": "modified",
+      "sha256": "b36f2dd97413dc84873b6922469db8200424ce9612a1c769ad7e69d94cc3be25",
+      "size_bytes": 2795,
+      "base_sha256": "9cc139d573333574a2983abe50b7d528e303715867d6c6e7286ef447c6f5f614"
+    },
+    {
+      "path": "application/ui/src/features/inference/sinks/add-sink/add-sink.component.tsx",
+      "status": "modified",
+      "sha256": "7ccce15e5827ff943436032df8a1a0ea3b198457921da90fa9ae2781e013f99b",
+      "size_bytes": 1550,
+      "base_sha256": "3ed79581c689413509ae4b8ed5ed2450023b00df125e9a76018f5c3814ae7624"
+    },
+    {
+      "path": "application/ui/src/features/inference/sinks/edit-sink/edit-sink.component.tsx",
+      "status": "modified",
+      "sha256": "2edb71a883627a076f2688e2ed816356ca7be3af6aa0de1f4359fa4eb97a5878",
+      "size_bytes": 2998,
+      "base_sha256": "d772707ee89a33c9664367e9c18b7e61af519db2b68601f775d02e168c1f26a3"
+    },
+    {
+      "path": "application/ui/src/features/inference/sinks/hooks/use-sink-action.hook.tsx",
+      "status": "modified",
+      "sha256": "8befa3756a5bd2577166bc2e49885a09920b8965402d051a972c27ade433e28b",
+      "size_bytes": 1672,
+      "base_sha256": "53a95bcb3c6a964faf3581a0c5653579e0ac6d3c030b5900dc004a7174ca70d9"
+    },
+    {
+      "path": "application/ui/src/features/inference/sinks/local-folder/local-folder.component.tauri.tsx",
+      "status": "modified",
+      "sha256": "fe2a075e1231aff1b8dc8a220391d4f3f4c8b4ce14ead5c9ab3d5ac14d24680b",
+      "size_bytes": 2588,
+      "base_sha256": "9917004d8b40b5c58dd43eac617789a37f9c115ae63230fa5dd976bd2f05d851"
+    },
+    {
+      "path": "application/ui/src/features/inference/sinks/local-folder/local-folder.component.tsx",
+      "status": "modified",
+      "sha256": "c468a4f1f7131233833223d343cc3673e535a1f85befc6f9248ffc603d870380",
+      "size_bytes": 1354,
+      "base_sha256": "626661f8771575fe120192011e57f5305e465299aa16ed4e15ef78de4f1301b9"
+    },
+    {
+      "path": "application/ui/src/features/inference/sinks/mqtt/mqtt.component.tsx",
+      "status": "modified",
+      "sha256": "04c1268636cffd9d3e7f3e06759c59735e930b8ad320b2ecaaa68b414ae3d691",
+      "size_bytes": 2106,
+      "base_sha256": "8db3bfe4fcb66e07bd708e003c2cab032df9edca8757b5553191d832fd150597"
+    },
+    {
+      "path": "application/ui/src/features/inference/sinks/output-formats/output-formats.component.tsx",
+      "status": "modified",
+      "sha256": "fdd8b069c2399107e054e552b8535bf8b681f1c1ef3a5ce09361de9493b337cb",
+      "size_bytes": 1158,
+      "base_sha256": "d4ea1c61d28474cd70c37616769d836a748c5c6d1901594071de4193351e2539"
+    },
+    {
+      "path": "application/ui/src/features/inference/sinks/rate-limit/rate-limit-fields.component.tsx",
+      "status": "modified",
+      "sha256": "19e209fac9aefadfb0b16042368c9ce7563249a540bed08356963a79b9e589d6",
+      "size_bytes": 1060,
+      "base_sha256": "1ba6c5a711b88635148dc3c0ad4260f44c304866db39c360e4a43a6a23b8e8f9"
+    },
+    {
+      "path": "application/ui/src/features/inference/sinks/sink-actions.component.tsx",
+      "status": "modified",
+      "sha256": "ba5fd13c815dc59005b74839ac102988a7a84f8459ca663ecee542ceb6f7148c",
+      "size_bytes": 2330,
+      "base_sha256": "24d364822ab26b184d636a65174332d9db76b26b9bc4d85ff8d271b184a17085"
+    },
+    {
+      "path": "application/ui/src/features/inference/sinks/sink-list/settings-list/settings-list.component.tsx",
+      "status": "modified",
+      "sha256": "ce20146acafb5a894012db962db971950e798dae8709c1f0010de48d06506c38",
+      "size_bytes": 4072,
+      "base_sha256": "ab61dc568bd4e415ca042d813ce2f315a054d7261259fd6feca231b9e1f137c1"
+    },
+    {
+      "path": "application/ui/src/features/inference/sinks/sink-list/sink-list.component.tsx",
+      "status": "modified",
+      "sha256": "02e3fde15770d79de8880c5d8ffc42c06cd635c5c3c7d2d7e9de4c94b0d0aed9",
+      "size_bytes": 3946,
+      "base_sha256": "9c6f64dd4f0a604d3d25017382b6ab19f6e842a660371327764eba17073b835b"
+    },
+    {
+      "path": "application/ui/src/features/inference/sinks/sink-list/sink-menu/sink-menu.component.tsx",
+      "status": "modified",
+      "sha256": "5568e30d0939e90007e8c6c29439a329d258fe0b82fe36c42699831f6a8b963f",
+      "size_bytes": 4079,
+      "base_sha256": "36af78b21ec9a1c6aab763dd9a5ac87d60fab8d2dcae8e8b8034f8419a915fb7"
+    },
+    {
+      "path": "application/ui/src/features/inference/sinks/utils.ts",
+      "status": "modified",
+      "sha256": "5142256599cd2060fc09c8bdb7f4933e9f083279474709770324dbbd9f30e008",
+      "size_bytes": 2354,
+      "base_sha256": "dd903bc89ac853eb113fc75e0c16c569ad3a2feb7edb8d16e8207dcb4ff3051e"
+    },
+    {
+      "path": "application/ui/src/features/inference/sinks/webhook/header-key-value-builder.component.tsx",
+      "status": "modified",
+      "sha256": "c5ae4db9f7bbe1810c1dc5fc30ccc2465caf3dd8b4210d34cadbf90bb1dfc9e1",
+      "size_bytes": 4067,
+      "base_sha256": "ab3240552aaf6a242f143b818e1a017f645b38f99cbedc883870011ba1ee7c46"
+    },
+    {
+      "path": "application/ui/src/features/inference/sinks/webhook/webhook.component.tsx",
+      "status": "modified",
+      "sha256": "fa2cbe63aea1d7f640a7a6d778a25f976a6aa04a75d1280ac59fbacc4d65ca70",
+      "size_bytes": 2559,
+      "base_sha256": "76ed9002c12a984dca85a71b444c5ea658a87d55689bddcc9e94911d55d80da2"
+    },
+    {
+      "path": "application/ui/src/features/inference/sources/add-source/add-source.component.tsx",
+      "status": "modified",
+      "sha256": "7e2361406e4e5e24fa68218478a0aa7cbb79371ed4237f7dc07bdf8b7f740b2d",
+      "size_bytes": 1585,
+      "base_sha256": "5755ae7e16749919a5ee36a6187c0ddf09412e2735a28834e2e8388b4694b004"
+    },
+    {
+      "path": "application/ui/src/features/inference/sources/edit-source/edit-source.component.tsx",
+      "status": "modified",
+      "sha256": "fbffe61ee6f6ed639cd6fe45230c2bfdb36e3f5b91bc55dc7ec4bad482f8809c",
+      "size_bytes": 3151,
+      "base_sha256": "910a2e08dca1eea29e768b449f2538aaf472276692fcd21ca3fabc4925dc7e1d"
+    },
+    {
+      "path": "application/ui/src/features/inference/sources/hooks/use-source-action.hook.tsx",
+      "status": "modified",
+      "sha256": "5857c60555865df6dc075d316c4d7f12dd55fb87460b9ef44166075d82f6fcfe",
+      "size_bytes": 1862,
+      "base_sha256": "2194fb1b069751246043e5adaf7905bd0c4b5730a3e45ae13f4edb0eaed9d20d"
+    },
+    {
+      "path": "application/ui/src/features/inference/sources/image-folder/image-folder.component.tsx",
+      "status": "modified",
+      "sha256": "63aa0b35470c8e300d9b1860148169a6b61a17cd5da6067a4d740aba1767bec2",
+      "size_bytes": 1359,
+      "base_sha256": "a641778e5bd797d3eb78b29c14ff9b88a04c197d6fa9fc7227ae39b6250571b8"
+    },
+    {
+      "path": "application/ui/src/features/inference/sources/ip-camera/ip-camera.component.tsx",
+      "status": "modified",
+      "sha256": "936afb55c2bba1f37f4c869087d3e5620baa7cb05990ecde3b1beee4cd20a512",
+      "size_bytes": 1198,
+      "base_sha256": "bc1ec0f8d28d4f9e2cbafa1d4abcfcf122f6755040a82102297eea4c768fbd3b"
+    },
+    {
+      "path": "application/ui/src/features/inference/sources/ip-camera/utils.ts",
+      "status": "modified",
+      "sha256": "1867ae2581ff9f8b9c104f59609579bc408ea8750966fc010b07184a38da6665",
+      "size_bytes": 804,
+      "base_sha256": "2a4648a07e24705d6f904388bd4ca2cb84edd06e25855a7688645b515e9574b2"
+    },
+    {
+      "path": "application/ui/src/features/inference/sources/source-actions.component.tsx",
+      "status": "modified",
+      "sha256": "25dd18df8f1aaa2bfc1b3a1d6376d3a377b04daadc308f3a8273a115f9f2b517",
+      "size_bytes": 2686,
+      "base_sha256": "15c4099dab0de97f7061282f2927c985eeac93fa0149bb67db603761b5b92e55"
+    },
+    {
+      "path": "application/ui/src/features/inference/sources/source-list/settings-list/settings-list.component.tsx",
+      "status": "modified",
+      "sha256": "a555b76839599a8360b6a9aa4bba5622fc544ba88709aef78d7423ca1cfb4b1d",
+      "size_bytes": 2212,
+      "base_sha256": "dbf600ea418ebe7c6129c29216efca72d299c65ea86f9edc7222874c6416fab3"
+    },
+    {
+      "path": "application/ui/src/features/inference/sources/source-list/source-list.component.tsx",
+      "status": "modified",
+      "sha256": "376a41b864ff16c8e7ed8ca08bdbcabc467c4f269914eb77605c2a97598a8d56",
+      "size_bytes": 4280,
+      "base_sha256": "1824973a2b83ead3c6622cf6cf10877a8100c3912102944bb2d572b2133ec9fe"
+    },
+    {
+      "path": "application/ui/src/features/inference/sources/source-menu/source-menu.component.tsx",
+      "status": "modified",
+      "sha256": "4b3f9a84dd35173a0946e6faaec65166375ac3b7fcef852bd4d4ac49db9fdf51",
+      "size_bytes": 7915,
+      "base_sha256": "404483a0900b5f3df049e2738e623ac0a9d8e7ea88975fc2daac8390e7dcbbf5"
+    },
+    {
+      "path": "application/ui/src/features/inference/sources/usb-camera/usb-camera-fields.component.tsx",
+      "status": "modified",
+      "sha256": "6288917fb32db186607b2f1c8343df11cf32b6542eb6dcf309ef865d2f6dc22d",
+      "size_bytes": 2641,
+      "base_sha256": "86394cc829b23d26a917e8d92e29c124527fb551fe1dbb2c7b4ae271fa074a9b"
+    },
+    {
+      "path": "application/ui/src/features/inference/sources/usb-camera/utils.ts",
+      "status": "modified",
+      "sha256": "590d2d6f9dbb2d786e5aa4240fd262e835b43d5e1e8360aefb5fcf5a8687b780",
+      "size_bytes": 700,
+      "base_sha256": "8cd8e0adabbb8f33cb952e32b67d084b45a138807b4bf2c999d6a67559938754"
+    },
+    {
+      "path": "application/ui/src/features/inference/sources/video-file/utils.ts",
+      "status": "modified",
+      "sha256": "e76caac911836ccb27f1eb6167e766472ce2721ea884a4ca83c832225250e927",
+      "size_bytes": 1883,
+      "base_sha256": "83fad0cf1eb36107a8d79ea64ee1623616730b66555b9de25492b2f716295bd9"
+    },
+    {
+      "path": "application/ui/src/features/inference/sources/video-file/video-file.component.tsx",
+      "status": "modified",
+      "sha256": "ec6b39c385b6df083f0d42f439cab19d5d5b53ebe8c811a815c6a5fce07dd5fa",
+      "size_bytes": 3308,
+      "base_sha256": "9dec2a6b339088ed742699c798db72297dbcbc47669a6083064cd0389a5789e3"
+    },
+    {
+      "path": "application/ui/src/features/inference/stream/stream-container.tsx",
+      "status": "modified",
+      "sha256": "9793060f790f1b33a2607f94445c1377950f62d6c0404e88e8d608074dbfc765",
+      "size_bytes": 4738,
+      "base_sha256": "ab626de3f4490c0871e448534c3f78f4647fa9f35c22c7bd28d7ff102fa13ae9"
+    },
+    {
+      "path": "application/ui/src/features/inference/stream/web-rtc-connection.ts",
+      "status": "modified",
+      "sha256": "04f5a904c54fc205bd239e6186fee6c48c8bd6988be0913ad7bc7c838d7f8fcd",
+      "size_bytes": 9181,
+      "base_sha256": "30025c12d4800c524d855a2bf980c854f667d7f36dfbea11d39659d29ca36e0e"
+    },
+    {
+      "path": "application/ui/src/features/license/license.component.tsx",
+      "status": "modified",
+      "sha256": "39ae3500133e01f83a70b32de9cb4944d713e15c1d7c6c127b2ca39916212d65",
+      "size_bytes": 3525,
+      "base_sha256": "de028a0c5b7d1b1c982a8257a95028df0db1cddf0f915e1a58f5d18e7c93d531"
+    },
+    {
+      "path": "application/ui/src/features/models/components/edgecrafter-license.component.tsx",
+      "status": "modified",
+      "sha256": "e22d6cae0e65aeaadb21ae144b6b0fce80cd875c3f26e62828e5e4489bd5ec63",
+      "size_bytes": 553,
+      "base_sha256": "a7f3011d563306ca5593fcc4713977158f302ede6e5c7aa9b24c7e20af78b50c"
+    },
+    {
+      "path": "application/ui/src/features/models/components/ultralytics-license.component.tsx",
+      "status": "modified",
+      "sha256": "6f73b8c87e4a62444e6a9e2e3442ee2c6b46e3d42b1bb2e3bc3ee42b97e85b45",
+      "size_bytes": 569,
+      "base_sha256": "68c94d904af675b87fcaa361c6de6f1a4f51ae8ce42a1e3dd3a2c8b1c71338e3"
+    },
+    {
+      "path": "application/ui/src/features/models/model-listing/components/dataset-actions/dataset-actions.component.tsx",
+      "status": "modified",
+      "sha256": "b92b3311286dfa1a5b6818782050160be54ca2d93599da79a8a5dc5e6579ea80",
+      "size_bytes": 4555,
+      "base_sha256": "81ac99a9633ee3ba0600872b4b2e0f0ca90b4dd4788b386fcb39933f1aa4abf0"
+    },
+    {
+      "path": "application/ui/src/features/models/model-listing/components/dataset-actions/dataset-revision-statistics/dataset-revision-statistics.component.tsx",
+      "status": "modified",
+      "sha256": "288eca113fc76920b6dcec37f83d8ba2f58fa67d0fd65e5a89e546473eafaf5b",
+      "size_bytes": 1540,
+      "base_sha256": "286ca46d2087311aab588d56cb75a1bb0e50b85e7bdf23b5e9156e85b56db027"
+    },
+    {
+      "path": "application/ui/src/features/models/model-listing/components/expandable-search/empty-search-results.component.tsx",
+      "status": "modified",
+      "sha256": "2dbeca5caad23eed36e884d9fea681248d3016eae74a0931a7b3af3aac6371fc",
+      "size_bytes": 497,
+      "base_sha256": "996b48d8c8e322066626e9c31b9603a18a8a10fa7a006fa43ed08d0ffb4f72db"
+    },
+    {
+      "path": "application/ui/src/features/models/model-listing/components/expandable-search/expandable-search.component.tsx",
+      "status": "modified",
+      "sha256": "f5b132438678c864d72b13a6e1db7fb97bba101780fdc8a012c9e83772164e38",
+      "size_bytes": 1629,
+      "base_sha256": "cbc068d596bd536be09073a63a099951bdc95f12c8d1230438d1bf7451afab51"
+    },
+    {
+      "path": "application/ui/src/features/models/model-listing/components/group-headers/architecture-group-header.component.tsx",
+      "status": "modified",
+      "sha256": "397744f42b31c27e46d521b6153af9eb026959126eb53b422d7d3b505e864c80",
+      "size_bytes": 1230,
+      "base_sha256": "2b9035ca05af0faed41ffe4a84f1901e0783e442742af0b755b4bf1517f7f11d"
+    },
+    {
+      "path": "application/ui/src/features/models/model-listing/components/group-models-container/group-models-container.component.tsx",
+      "status": "modified",
+      "sha256": "4e7705c6b46d4c4f5c32016f41c13274c0198991ff51ece5a4c7618a9dbbaa55",
+      "size_bytes": 2653,
+      "base_sha256": "3895cb39d162043e67143df319fc1c620151ad7828c1445d0db174b8a5402967"
+    },
+    {
+      "path": "application/ui/src/features/models/model-listing/components/header.component.tsx",
+      "status": "modified",
+      "sha256": "1ac48e6a6b35f01addc0e04ce6a9f0f25e3df36bd6243a52aef6b17c6222c487",
+      "size_bytes": 4000,
+      "base_sha256": "bf7ea5e7bbb2d29068f4c9bd0cdcd9266e38db64bad00234a0d372984eb577bd"
+    },
+    {
+      "path": "application/ui/src/features/models/model-listing/components/model-actions/model-actions.component.tsx",
+      "status": "modified",
+      "sha256": "dc43e52ada3e43216774406c4b1d460e60ad0bbb3598f371306a3eb689e110bd",
+      "size_bytes": 6150,
+      "base_sha256": "847e9d3115026a539ac22b4547823dcddafade562e7a554d405e0a20d5d8d346"
+    },
+    {
+      "path": "application/ui/src/features/models/model-listing/components/model-row/dataset-revision-column.component.tsx",
+      "status": "modified",
+      "sha256": "a4f0a2c1aaa4cc7e750feee0bfa49da02840f66e518f065ba5f3b05394aea33a",
+      "size_bytes": 1889,
+      "base_sha256": "cab5995f2478be8fcb0a24daa78d9f03c6b02981ff2ecfaac180f7210979b188"
+    },
+    {
+      "path": "application/ui/src/features/models/model-listing/components/model-row/model-row.component.tsx",
+      "status": "modified",
+      "sha256": "d72308772323972e1cc4c63e8b181d07f5b85d54ba56a5bbdc4419bf835d9b21",
+      "size_bytes": 4225,
+      "base_sha256": "69ae7bbf981864e5a760eff268758f7f8efe6cd92776207c1818f7ed15bfe0cd"
+    },
+    {
+      "path": "application/ui/src/features/models/model-listing/components/model-row/performance-category-badge.component.tsx",
+      "status": "modified",
+      "sha256": "588180f6d700f33a6936d83f4e7de499d595c2134896650224f5614fd64763e5",
+      "size_bytes": 747,
+      "base_sha256": "6b0042d7178f0d4d3184943910fbee44862b5c280200229bc8d2669ff16bff3b"
+    },
+    {
+      "path": "application/ui/src/features/models/model-listing/components/model-row/rename-model-dialog.component.tsx",
+      "status": "modified",
+      "sha256": "0dc1a01af6b40d37a2f98e01639f2db7659e3c94de9d289ff2299a825e675e11",
+      "size_bytes": 1620,
+      "base_sha256": "bcc18a036ee0abbd429f281e7b081ea6a692818b6365cc305448c00733f387ed"
+    },
+    {
+      "path": "application/ui/src/features/models/model-listing/components/model-row/utils.ts",
+      "status": "modified",
+      "sha256": "046f0901dc9a9db3cd742875c9ffb9f2d2690015968893b3ad46c316491e66ce",
+      "size_bytes": 1902,
+      "base_sha256": "3150637893efdca1e3101664c4f905b03ba25f29c9853b113f0f6e12a6c4154b"
+    },
+    {
+      "path": "application/ui/src/features/models/model-listing/components/models-table-header.component.tsx",
+      "status": "modified",
+      "sha256": "f74ea1f0313d17afda915638ab39c55643f9af0cfbed1040479a8c67a71e6501",
+      "size_bytes": 2216,
+      "base_sha256": "6bd83f71babaa90eced0b84cf0ed37a61e63c2dbaf46b5c466d53dd3975c5262"
+    },
+    {
+      "path": "application/ui/src/features/models/model-listing/components/parent-revision-model.component.tsx",
+      "status": "modified",
+      "sha256": "eab13923a6e7f0e8bf9748115deca4303661616614db710e8b353a84b656c82e",
+      "size_bytes": 746,
+      "base_sha256": "c51d210ac1a5447241e3dde1ae1b2444c929447b871f56292b6fce2dff3eaa66"
+    },
+    {
+      "path": "application/ui/src/features/models/model-listing/components/rename-dataset-revision-dialog.component.tsx",
+      "status": "modified",
+      "sha256": "6a6805388dd23963b28a3ac3ccc7f2954e5438b381e6fd2b5f6142c3b5cbbbaa",
+      "size_bytes": 1834,
+      "base_sha256": "ec1d861986727e6b4272d91a9ac8d28332fe8810cd071f5e115446cfb7910e13"
+    },
+    {
+      "path": "application/ui/src/features/models/model-listing/components/three-section-range/three-section-range.component.tsx",
+      "status": "modified",
+      "sha256": "62f53ee1892cda1bfffc1f0ccff4866ba60a7165683a45778437d25126ef82cd",
+      "size_bytes": 2011,
+      "base_sha256": "c736597496a0b5ddfcfd8823037b5ffc5e2b3e807093525a645dbfdcedd4fe7b"
+    },
+    {
+      "path": "application/ui/src/features/models/model-listing/current-running-jobs/current-running-jobs.component.tsx",
+      "status": "modified",
+      "sha256": "efc9c5c5c389b9890a591a45bd1f5401cc88f56e9a3c85bc698f95885e8f2e9d",
+      "size_bytes": 3141,
+      "base_sha256": "f5591b8382668463ae0ca07403c87c7dbe00a223f353e59e0605656a979ba61d"
+    },
+    {
+      "path": "application/ui/src/features/models/model-listing/current-running-jobs/failed-job-row.component.tsx",
+      "status": "modified",
+      "sha256": "3f498ce6563b51a24b4fc8b5c9b2b25ff482393a754bd3ac10274108857ab526",
+      "size_bytes": 1327,
+      "base_sha256": "8e0ba98e0793afeb3cd1d52bc690b5894db5af982ecb5b9b1037f5e6d75f407b"
+    },
+    {
+      "path": "application/ui/src/features/models/model-listing/current-running-jobs/job-row.component.tsx",
+      "status": "modified",
+      "sha256": "4f4aa323708248981e74e610596015033c4e0751202d9ab36f5c1a8cf554dbaa",
+      "size_bytes": 4763,
+      "base_sha256": "a324f1dfadcbf463848d8081cebda88f72ec33db70e34617cd2431775b4d5c9b"
+    },
+    {
+      "path": "application/ui/src/features/models/model-listing/current-running-jobs/running-job-row.component.tsx",
+      "status": "modified",
+      "sha256": "1e130748a59adaa26bc07304c04b1bd39f79d9eb538c57332ac979e959297bad",
+      "size_bytes": 3418,
+      "base_sha256": "de9269f2af7eb6b14dbfae5b204361809c54845bf0cddf5479d7d897ff8be379"
+    },
+    {
+      "path": "application/ui/src/features/models/model-listing/current-running-jobs/running-job-table-header.component.tsx",
+      "status": "modified",
+      "sha256": "ac9657e7f59b5363dad97628deb9aaba9f5acea031b137faeb4786203cfb8baa",
+      "size_bytes": 1207,
+      "base_sha256": "879ae8296fb682717830f51411b61a75ac8eab4ff1e5623bf52c203b492c2686"
+    },
+    {
+      "path": "application/ui/src/features/models/model-listing/model-details/model-details-tabs.component.tsx",
+      "status": "modified",
+      "sha256": "ea31c76e2c693702a99c7de88f8cc9bcdfc86ac7b72de041d27cd6a96c30b692",
+      "size_bytes": 4422,
+      "base_sha256": "d156d99097b7face72e24ded92ac368e46ed43f6d4853429f91fa0bc8a644d7d"
+    },
+    {
+      "path": "application/ui/src/features/models/model-listing/model-listing.container.tsx",
+      "status": "modified",
+      "sha256": "8e121c49ea1bf8c9cd0c6f58897d79a7198204743b837360e3c48cead7feff79",
+      "size_bytes": 3136,
+      "base_sha256": "4a50d907e45a304a0be3926313e0831fa53dcefbd16fa844c1db9440542147ec"
+    },
+    {
+      "path": "application/ui/src/features/models/model-listing/model-metrics/model-evaluations.component.tsx",
+      "status": "modified",
+      "sha256": "4b8583c77d46fa31bf5bfdb2707355c11ac7f6e005fc87dc6f9439eff789275b",
+      "size_bytes": 1554,
+      "base_sha256": "4de6536431ffb480356d4c4c61a554455c4ab059f6f33e43258892070f55fa71"
+    },
+    {
+      "path": "application/ui/src/features/models/model-listing/model-metrics/model-metrics.component.tsx",
+      "status": "modified",
+      "sha256": "4c63c94b8504f69ea84320a8e0b00573b7c77aebe5121a9261210cf1e77c7dae",
+      "size_bytes": 1755,
+      "base_sha256": "cee6a984d75c6034a69dd581c1a7e0a6ff87412adc0f1c0a9ff637ed0ba4b624"
+    },
+    {
+      "path": "application/ui/src/features/models/model-listing/model-training-datasets/model-training-datasets.component.tsx",
+      "status": "modified",
+      "sha256": "c5e59953de957cd7deed9861e5702a21698d12cf955a5be9013a1b196cc2735e",
+      "size_bytes": 4473,
+      "base_sha256": "7916c11f13358dc982d4a3d1fb0eba5ab6ca83aa69c2c2df8dc81b7ad17d6e26"
+    },
+    {
+      "path": "application/ui/src/features/models/model-listing/model-training-datasets/subset-gallery.component.tsx",
+      "status": "modified",
+      "sha256": "37002286e2d37b339fa894dddef37df79e5baa91e777657faa1c47c9ef3a5921",
+      "size_bytes": 6382,
+      "base_sha256": "8dd20674ccaddae1d0d0681a59b1141fca681dc5b835be6706738db47826c0f5"
+    },
+    {
+      "path": "application/ui/src/features/models/model-listing/model-training-parameters/model-training-parameters.component.tsx",
+      "status": "modified",
+      "sha256": "6a9161906c4d05220726e36ccb24ad669c382cad6852c2ff0be2ff1998543a8f",
+      "size_bytes": 3821,
+      "base_sha256": "bb5a73a8955b8318874d05afc648a06b8e3edd4723a8464b37879a74ea12a293"
+    },
+    {
+      "path": "application/ui/src/features/models/model-listing/model-training-parameters/utils.ts",
+      "status": "modified",
+      "sha256": "e3203d5f7dc50431ef245c4c3e2ef2b606d0f73c3e94fd417d23b7b41ed78265",
+      "size_bytes": 3464,
+      "base_sha256": "d72fff230f4f8eaa0a7846852ba8a515240b97b4e799900d0f55935d8563e894"
+    },
+    {
+      "path": "application/ui/src/features/models/model-listing/model-variants/accuracy-indicator/accuracy-indicator.component.tsx",
+      "status": "modified",
+      "sha256": "d889404d12db57a6f377ab059258364e48cdf83dc7b88fcbe197ceb7ee9e14ad",
+      "size_bytes": 1746,
+      "base_sha256": "6827157e9dbb08ef2ac56335c40afa4c427fdcfd4dd093ad102dad555458292d"
+    },
+    {
+      "path": "application/ui/src/features/models/model-listing/model-variants/model-variant-table.component.tsx",
+      "status": "modified",
+      "sha256": "651e7d08cb4025d567a46070c3b0acd19401bd7903eb2ee255b5c5e07c923255",
+      "size_bytes": 7298,
+      "base_sha256": "83fcbbcc8c3afd28fd9081c62710436f7eb3a2372c8cd8a09780ca2e0a9024d2"
+    },
+    {
+      "path": "application/ui/src/features/models/model-listing/model-variants/model-variant-tabs.component.tsx",
+      "status": "modified",
+      "sha256": "d75a38e3b008d14a6dabffac29f67e68f7ef333fcb5c8d34b2dc911aafa3dc51",
+      "size_bytes": 2550,
+      "base_sha256": "57bdfbc767b065fba1cdd5fe3784766a7a3629159ba0b96c04b3b1b4c760add7"
+    },
+    {
+      "path": "application/ui/src/features/models/model-listing/model-variants/quantization-dialog/quantization-dialog.component.tsx",
+      "status": "modified",
+      "sha256": "0e70366f13cbdf13d2911c9c68a4bf9ef617bf5388fe918e9f4fcf0abd743b71",
+      "size_bytes": 6927,
+      "base_sha256": "2afdfbae12e4c7cbce7f352f8a44b0d39c19c3040e5b4a39f279ab32e8153a25"
+    },
+    {
+      "path": "application/ui/src/features/models/model-listing/model-variants/quantization-dialog/quantization-fields.component.tsx",
+      "status": "modified",
+      "sha256": "181f05b07787059fb1f6d757bbc656e983e7c6fe731cdfa527530762adbaad42",
+      "size_bytes": 7593,
+      "base_sha256": "89c419406cefac27ef1964b69df337a10a35b8f191237a8bf421d70a0ee86450"
+    },
+    {
+      "path": "application/ui/src/features/models/model-listing/model-variants/quantization-row.component.tsx",
+      "status": "modified",
+      "sha256": "b15f1aef78655441fe88e56035da1ff29a659935f9f5dff8cba58be75a6e321f",
+      "size_bytes": 1508,
+      "base_sha256": "0b28cc22ea18476ca1549bd980baefad39e2345a44541d6a1a7da2a3a881ec06"
+    },
+    {
+      "path": "application/ui/src/features/models/model-listing/utils/grouping.ts",
+      "status": "modified",
+      "sha256": "93ce4aab26c060babcf56ef89ce397f12ea89949ba30d0bf07e555befbe25c8e",
+      "size_bytes": 3065,
+      "base_sha256": "6b758b0f9f6259fe3d52124eaf33483022097e37194f28cea21ef3650fe2d7dd"
+    },
+    {
+      "path": "application/ui/src/features/models/model-listing/utils/variant-metrics.ts",
+      "status": "modified",
+      "sha256": "fe438352dc93dc06b558d32fcfd1ed58db9c1887c68478e283020f43e834831c",
+      "size_bytes": 2045,
+      "base_sha256": "6dd18a2353339a004718809f4480f3e680d12773110230084f0c72cca9207882"
+    },
+    {
+      "path": "application/ui/src/features/models/train-model/advanced-settings/advanced-settings.component.tsx",
+      "status": "modified",
+      "sha256": "167e9a09aedc5768321ae72a6ed1ecc148650859afb27cebcfe203b00347d083",
+      "size_bytes": 3169,
+      "base_sha256": "32979e707d2629eda103e49da9951f7bd6939f8c06241478dde0aa2d993d6aa0"
+    },
+    {
+      "path": "application/ui/src/features/models/train-model/advanced-settings/components/boolean-parameter-field.component.tsx",
+      "status": "modified",
+      "sha256": "d1512943de595a5f0a515255a400c194869d4370de26c619d56fbff24643a2e6",
+      "size_bytes": 729,
+      "base_sha256": "49cbc77ebe42d206498721e8d5821488355e8a20de668abe1c08b7a1df3abab0"
+    },
+    {
+      "path": "application/ui/src/features/models/train-model/advanced-settings/components/number-parameter-field/number-parameter-field.component.tsx",
+      "status": "modified",
+      "sha256": "ca5cdf0f774b3820d390774ea406a9d3e8941d5d1ba6ac36e1fbb491da94387d",
+      "size_bytes": 3059,
+      "base_sha256": "7aaa808fe647b5eee32a79f62b59ef4e30380ead15ad395e9ee223c6df6d6dfd"
+    },
+    {
+      "path": "application/ui/src/features/models/train-model/advanced-settings/components/parameters.component.tsx",
+      "status": "modified",
+      "sha256": "4458ea32758cbcce0b07622248fad27e8d5dc98dc42c1012d70f5e8cd1a0a67e",
+      "size_bytes": 18276,
+      "base_sha256": "4042e75db7afabac11db72ba12671dc9054471117b9469a333eb5694ea25c5e7"
+    },
+    {
+      "path": "application/ui/src/features/models/train-model/advanced-settings/components/range-parameter-field/range-parameter-field.component.tsx",
+      "status": "modified",
+      "sha256": "4941c7172856a6c75c623cc3f578e32cc5f24c04e144974833df9ff6dbd2ef5a",
+      "size_bytes": 3442,
+      "base_sha256": "3066db1e5a9496da3b60854ed4aa15d804404305ca0526d1b3ad19d3ada711ce"
+    },
+    {
+      "path": "application/ui/src/features/models/train-model/advanced-settings/data-management/data-augmentation/data-augmentation.component.tsx",
+      "status": "modified",
+      "sha256": "e95807015d2236f4a92ea7a144cf5fd1aaaf080650b107cf73f1c0465eebd110",
+      "size_bytes": 1662,
+      "base_sha256": "5b79227d85f37c37c9e9aadc0cc0e20bac39195edff4f0545ec1e0ec530b41cc"
+    },
+    {
+      "path": "application/ui/src/features/models/train-model/advanced-settings/data-management/filters/filters-options.component.tsx",
+      "status": "modified",
+      "sha256": "56cfec7ebd9806376a76dae9f7b8d09aee9fbf9e841c5301c91e41cf8d2ddd31",
+      "size_bytes": 3928,
+      "base_sha256": "4413b87db9a584783b1934286ec3b5b1e42fef92bd46989f7ed644c3788febf5"
+    },
+    {
+      "path": "application/ui/src/features/models/train-model/advanced-settings/data-management/filters/filters.component.tsx",
+      "status": "modified",
+      "sha256": "41e74143924fb693aff4d88c2a4516adcb8b9b6433807cd8cf69140fe5c4941e",
+      "size_bytes": 2562,
+      "base_sha256": "ad371478ae346dbc0386226022fd605b70da5d92d2164012be5f03be30c7d990"
+    },
+    {
+      "path": "application/ui/src/features/models/train-model/advanced-settings/data-management/intensity-mapping/intensity-mapping.component.tsx",
+      "status": "modified",
+      "sha256": "1f5cad9cb28d7cc77fa77c9d8ec00ec21a183847aab16bb3a78734497053752e",
+      "size_bytes": 2218,
+      "base_sha256": "2d4197af9f84c4a012b3118edd3210bcb97a76bdbc66dc5c8bd54e623bedcd80"
+    },
+    {
+      "path": "application/ui/src/features/models/train-model/advanced-settings/data-management/tiling/tiling-modes.component.tsx",
+      "status": "modified",
+      "sha256": "b4fda1638e99365fe614b7db27f9ab57bcb36c8000ee39322909666461543cad",
+      "size_bytes": 1390,
+      "base_sha256": "4a6eb2a2f927a081d88bdd6f6b2e8dbf4a93613002260705ad214acac797462e"
+    },
+    {
+      "path": "application/ui/src/features/models/train-model/advanced-settings/data-management/tiling/tiling.component.tsx",
+      "status": "modified",
+      "sha256": "05a8db3f1966d38af7e222353d0fada1991b6da61e8ba4b5a15183b97f6edbab",
+      "size_bytes": 5126,
+      "base_sha256": "192283c05a710da1f6dc5bdb5afd8495cb3a0107fd604c6e10629bee42828725"
+    },
+    {
+      "path": "application/ui/src/features/models/train-model/advanced-settings/data-management/tiling/utils.ts",
+      "status": "modified",
+      "sha256": "3d9d5428a06ac395761868e8e393da2816b519a90eaafe7c407da02944164ff4",
+      "size_bytes": 3381,
+      "base_sha256": "1552b5a8dcf37b5692a5156f81442861345c79be542421742f4b5364160c8ebf"
+    },
+    {
+      "path": "application/ui/src/features/models/train-model/advanced-settings/data-management/training-subsets/resulting-dataset-distribution.component.tsx",
+      "status": "modified",
+      "sha256": "5d84470d7ef775aa7d2ee1ac23795559a231ebc29e2f58f1b6dd27f82767884d",
+      "size_bytes": 4453,
+      "base_sha256": "ac36463696efb905b079df789073ee28fc37bcbdd7dabded6ba3dfcb33de48aa"
+    },
+    {
+      "path": "application/ui/src/features/models/train-model/advanced-settings/data-management/training-subsets/subset-distribution-stats.component.tsx",
+      "status": "modified",
+      "sha256": "6513258eb85bab4b65d2152c75dc321c3fa42926affe423cea7231cbba587fc5",
+      "size_bytes": 2414,
+      "base_sha256": "af58d3793c2ee7cb85753e55860ad9bbe6181d635e564b66dcbdac799252e8fd"
+    },
+    {
+      "path": "application/ui/src/features/models/train-model/advanced-settings/data-management/training-subsets/subset-distribution.component.tsx",
+      "status": "modified",
+      "sha256": "c6d7832c193ebe742a90fe9c11efecbdfd2a39b67b4fcdfae7b9cec13c363cac",
+      "size_bytes": 2753,
+      "base_sha256": "ba66a50a32b683cbeac9d3cefccfefc2e864dab0f76fa5ceb42584c05d1c960a"
+    },
+    {
+      "path": "application/ui/src/features/models/train-model/advanced-settings/data-management/training-subsets/subsets-distribution-slider/subsets-distribution-slider.component.tsx",
+      "status": "modified",
+      "sha256": "b635cffc8bf058dca48709c617f89cde63dd3296d248496656196e391b27cf4b",
+      "size_bytes": 4664,
+      "base_sha256": "5af2a1985acc2485604c3fcc101b5074f4398eaf30c9d3a8740564d95a17bada"
+    },
+    {
+      "path": "application/ui/src/features/models/train-model/advanced-settings/data-management/training-subsets/training-subsets.component.tsx",
+      "status": "modified",
+      "sha256": "df5c32854ec82c10fd1cfcc73dcc7879f3b4b5dc7ae521eed503d8c7c57110ba",
+      "size_bytes": 10357,
+      "base_sha256": "9667f0f163301369b994f12e9118cdaa0f209df88ff97c3a2e231eff50a3d922"
+    },
+    {
+      "path": "application/ui/src/features/models/train-model/advanced-settings/training/learning-parameters/input-size-parameters.component.tsx",
+      "status": "modified",
+      "sha256": "42c8380c311b208dae17cab1826f0518b70b03e483e9550aef19f1d3d2afe76d",
+      "size_bytes": 3086,
+      "base_sha256": "293b927ad10d05d532a10306a63c4cb5d343db5fce2c9616cc1ef4374e264f93"
+    },
+    {
+      "path": "application/ui/src/features/models/train-model/advanced-settings/training/learning-parameters/learning-parameters.component.tsx",
+      "status": "modified",
+      "sha256": "7bc97b559198a9f9851083440e57171a85f1c4582632e10a3923bfb3eb48a836",
+      "size_bytes": 1696,
+      "base_sha256": "0102d4b96aae1f50a7c7f684fa88724ba82d2fad7f9e994eb52f6a8d161a4132"
+    },
+    {
+      "path": "application/ui/src/features/models/train-model/hooks/use-train-model-disabled-reason.ts",
+      "status": "modified",
+      "sha256": "caa5b24f3bb2990abd949abab8521d17dcb3c7ee64ef5305e492a13c731e79c7",
+      "size_bytes": 4801,
+      "base_sha256": "0effcb08412dfa9b35d70d74d8b4d8a03ea8f4144a466e5082d42a63712f7ac2"
+    },
+    {
+      "path": "application/ui/src/features/models/train-model/model-architectures-list/all-model-architectures.component.tsx",
+      "status": "modified",
+      "sha256": "133ba85e0cc42b9eefdece742c82680659e5c018f0848ed6cdb098001d5e1374",
+      "size_bytes": 2724,
+      "base_sha256": "c1e59881dbfc04f294a79becc5516c54af9830383053edffee87c44d15763713"
+    },
+    {
+      "path": "application/ui/src/features/models/train-model/model-architectures-list/model-architecture-card/model-architecture-card.component.tsx",
+      "status": "modified",
+      "sha256": "c60ae97e7617da20c45d293765dd20e958a72be856be2da48cd8a2ab26e4fbd2",
+      "size_bytes": 5603,
+      "base_sha256": "09d4c4a57ff852fbf8e3991e14f6e1182cb2563b447960a373eaad9b0778c011"
+    },
+    {
+      "path": "application/ui/src/features/models/train-model/model-architectures-list/model-architectures-list.component.tsx",
+      "status": "modified",
+      "sha256": "1315149a0c271891afa5ba7e3e8f7e563ca90943bac263ff20f91bc80715d47e",
+      "size_bytes": 2181,
+      "base_sha256": "da930e6f32c6b2dd1c25f0ce197f27ca6d9c82570e681daf1021facebbcfb500"
+    },
+    {
+      "path": "application/ui/src/features/models/train-model/model-architectures-list/recommended-model-architectures.component.tsx",
+      "status": "modified",
+      "sha256": "d6aca0f57597ccdd1a7b04b8736b22814b3aafe517658684c237b4d33d00b7a2",
+      "size_bytes": 1549,
+      "base_sha256": "1c631813c7cc7fa786c13f48acf934832d6ad07415e4adf6105a47967fd6518b"
+    },
+    {
+      "path": "application/ui/src/features/models/train-model/model-architectures-list/utils.ts",
+      "status": "modified",
+      "sha256": "86917225b1cb54f8b10fadc1b631f465c7bea3547cca6c54d60e7ac5ec4715f4",
+      "size_bytes": 1506,
+      "base_sha256": "9d7b5f346f946b541680e3aaf5ddbe1a23ee86cc254a1e1320ada09978345282"
+    },
+    {
+      "path": "application/ui/src/features/models/train-model/select-dataset-revision.component.tsx",
+      "status": "modified",
+      "sha256": "1dedc6885266ee277f8b2a69ac8b354eb843dc03e153340e516d3b5ade24c854",
+      "size_bytes": 1629,
+      "base_sha256": "6e25f5cbd0e20bb484f7e358665fa5718c27f72988d6373b1e1c00a296b8c94b"
+    },
+    {
+      "path": "application/ui/src/features/models/train-model/select-model-revision.component.tsx",
+      "status": "modified",
+      "sha256": "1c8b014fc54507b2334a9cd9db916ab1479068442792b78492f902e44938f28d",
+      "size_bytes": 1330,
+      "base_sha256": "475184b2916987c2430910db3c45813562727c12e0c91dbcba199274556312ef"
+    },
+    {
+      "path": "application/ui/src/features/models/train-model/select-training-device/select-training-device.component.tsx",
+      "status": "modified",
+      "sha256": "d0c83ced959df599955b0d4ec1e2a2f4494af5b2c585946175feab69c14b1dc4",
+      "size_bytes": 867,
+      "base_sha256": "93dfb54a903e54579ee26a844fe58f4c783b3df17dd400d709b9c7b898ea496e"
+    },
+    {
+      "path": "application/ui/src/features/models/train-model/sort-model-architectures/sort-model-architectures.component.tsx",
+      "status": "modified",
+      "sha256": "c7293c949cdd8156d0272dc34727209f05db226a4c4470da6d6dd9cec214396c",
+      "size_bytes": 1699,
+      "base_sha256": "1823a02f55f1842d28acfd5c35ad9b7e853d1503ac63bea357f3cb04cd1d8a6d"
+    },
+    {
+      "path": "application/ui/src/features/models/train-model/sort-model-architectures/utils.ts",
+      "status": "modified",
+      "sha256": "d4be6fad0d361cd5fd0c8680d5046e970bcb11ab5930b9a99e5a695e4f779f3f",
+      "size_bytes": 2668,
+      "base_sha256": "9429660e9cfe2d25ef096b6ad1d9d7f6f11be8c7afadbd06381e09b0dd27b6a9"
+    },
+    {
+      "path": "application/ui/src/features/models/train-model/timm-model-configuration/timm-model-configuration.component.tsx",
+      "status": "modified",
+      "sha256": "41b7b1008930f4ef8accd761771cf952cdaf5c5812535cdd04b8a4a69bfead0b",
+      "size_bytes": 6129,
+      "base_sha256": "cb57786cd90adc8683b7184340a69103d32fe896289be91aa0d3a01d1416f89a"
+    },
+    {
+      "path": "application/ui/src/features/models/train-model/train-model-dialog.component.tsx",
+      "status": "modified",
+      "sha256": "a799980cd19d1e1d8f52d238110382764d594145a6b4612a0e4700bae610ae2a",
+      "size_bytes": 5008,
+      "base_sha256": "ab7daa19b27e3c1b28f0faf384a2dc9729e642f2a506b27b478fc56bea0ba129"
+    },
+    {
+      "path": "application/ui/src/features/models/train-model/train-model-provider.component.tsx",
+      "status": "modified",
+      "sha256": "eacfe7462ecbd86e247c3a618d26439f4600d548c6a7506963bdf864c60acdeb",
+      "size_bytes": 8885,
+      "base_sha256": "2cbcb6f1712bd2e175aa3e985e8eb1356787112f1085289ed6c77a7302fe9d46"
+    },
+    {
+      "path": "application/ui/src/features/models/train-model/train-model.component.tsx",
+      "status": "modified",
+      "sha256": "a86accb7ac765e75d2cad4262be28d1cd0d5f3f2d036dcaeb68d4a74b7823c91",
+      "size_bytes": 1089,
+      "base_sha256": "d0efb783909e5f82d4bfc58ac829cf3faf62057223439fde33380c6627ddafab"
+    },
+    {
+      "path": "application/ui/src/features/models/training-logs/hooks/use-model-logs.hook.ts",
+      "status": "modified",
+      "sha256": "3c01a30513972ed4642e61542a0b878cf7e77cc7ba6ba2bca6e296c11119895c",
+      "size_bytes": 2613,
+      "base_sha256": "c40fa3898aaf3a306f1b7d66ebedab0ca291a4bcc9a138549a097638c4accde4"
+    },
+    {
+      "path": "application/ui/src/features/models/training-logs/log-entry.component.tsx",
+      "status": "modified",
+      "sha256": "e64e9fce111b26b6b2b4672237bfff63ef87204839b675898d1df82ba1cdc010",
+      "size_bytes": 3599,
+      "base_sha256": "681bb409eee6f704162361faa773c8b6b5a1d822f40d88238dc7f321645eb170"
+    },
+    {
+      "path": "application/ui/src/features/models/training-logs/log-viewer.component.tsx",
+      "status": "modified",
+      "sha256": "219f5eb79d53e1a4f8bdf35c787c803b9f74e0fc28dda43929832cd034915d07",
+      "size_bytes": 5303,
+      "base_sha256": "b678fcd8c7b38326a5937e9afb039490965454fcc3b143a1eb3329c8cb090437"
+    },
+    {
+      "path": "application/ui/src/features/models/training-logs/training-logs-dialog.component.tsx",
+      "status": "modified",
+      "sha256": "b54569bd3074d19b875f241cebdb4149502223db42161b392853b48a7911ee2e",
+      "size_bytes": 3508,
+      "base_sha256": "23b6bf486a17d21c8f1b482d453f8f546c61b1fbadb38bf0720e7a6babbe085a"
+    },
+    {
+      "path": "application/ui/src/features/project/create/classification-label-selection/classification-task-type-selection.component.tsx",
+      "status": "modified",
+      "sha256": "b9bededa927d6238578e5aa2d25887acf4ffaabe5865103baf588158d5d55126",
+      "size_bytes": 2902,
+      "base_sha256": "ac92714bb8247b795731fb2b4fccfd768155aba726e5b03a4049d6d843a538bd"
+    },
+    {
+      "path": "application/ui/src/features/project/create/create-project-form.tsx",
+      "status": "modified",
+      "sha256": "c1018f5f4b28a86318ea112e48eb35e89edb118d233009a876f690c9e0fab668",
+      "size_bytes": 6774,
+      "base_sha256": "2929c63ec092ab65a9c4eda22f5f519e94899a56b5615ebb6b64e5500bfad8ef"
+    },
+    {
+      "path": "application/ui/src/features/project/label-selection/create-label/create-label.component.tsx",
+      "status": "modified",
+      "sha256": "2a68ee783ab5d434395fdc1dcffa42b1cb1b8f5894b3f555b932a1ed1744201f",
+      "size_bytes": 4147,
+      "base_sha256": "69f19544434e0dcd9bf3789c787b175e57e7bb530e9eb6859278730d713724a9"
+    },
+    {
+      "path": "application/ui/src/features/project/label-selection/label-selection.component.tsx",
+      "status": "modified",
+      "sha256": "9b0ba7c8878b0694bcf19f166256efc062078fdc3844db9a995aa1b135c9eb75",
+      "size_bytes": 1685,
+      "base_sha256": "d57366258b1b9944ef865231e4f9c021bc5bc4fcae98a3774268ace12a7be5c9"
+    },
+    {
+      "path": "application/ui/src/features/project/label-selection/label-tag/label-tag.component.tsx",
+      "status": "modified",
+      "sha256": "bdfd735067a13cb3ee8013d1e5809f001d02fa03056eec3787105d8d06f4a554",
+      "size_bytes": 1685,
+      "base_sha256": "e86ac0bf02e3720c99c0cd7171821ca9b103998bc8a83e1da9bad10852a4113d"
+    },
+    {
+      "path": "application/ui/src/features/project/list/active-project-badge/active-project-badge.component.tsx",
+      "status": "modified",
+      "sha256": "4aa284c5328287c19ae26ffac39807fc249cf6e022c229fa933a16ff59d10e83",
+      "size_bytes": 589,
+      "base_sha256": "22cd121fd462b8276ebfe93775ab95efa0604df7aba729bf737ed5f6bc95ac28"
+    },
+    {
+      "path": "application/ui/src/features/project/list/empty-project-list/empty-project-list.component.tsx",
+      "status": "modified",
+      "sha256": "5e2766d57ad42d92f8de5c6c94b25107d23b7d5577b37f261591e68521dd1465",
+      "size_bytes": 2990,
+      "base_sha256": "cef45fdf4cc4d0acf525ba44608bd4af6d99210d443ef1b4d42cf6b441805071"
+    },
+    {
+      "path": "application/ui/src/features/project/list/empty-project-list/empty-project-list.module.scss",
+      "status": "modified",
+      "sha256": "05360b1fda4d5d9100257d0f16bea46be57103edf0d71b92d3ed3b53988fbb85",
+      "size_bytes": 1232,
+      "base_sha256": "cf2ec9fefe6fe760d907c57dc78eafd08d281f0d65a3512513e551a5b305941a"
+    },
+    {
+      "path": "application/ui/src/features/project/list/empty-project-list/workflow-steps.component.tsx",
+      "status": "modified",
+      "sha256": "42568eb5f079e0506cf27ef83dcf5c981c65352f65e5cdd6844f0a521f105281",
+      "size_bytes": 1388,
+      "base_sha256": "88953d53d4373cbb62e07aa9c4805ebc295d76bad657f2c8df4216676acd4c5e"
+    },
+    {
+      "path": "application/ui/src/features/project/list/filter-projects/no-matching-projects.component.tsx",
+      "status": "modified",
+      "sha256": "c7c64c23a3b966dd82f8829ec393935de3aada474b6e637ef82d36a018a198ab",
+      "size_bytes": 989,
+      "base_sha256": "dac08875616920e8ae3dd88f2643047551483e3b992b0b137a04df51cbd94d64"
+    },
+    {
+      "path": "application/ui/src/features/project/list/filter-projects/project-filters.component.tsx",
+      "status": "modified",
+      "sha256": "20c6d0588beba48c515650dfb859488fc1568cf9fe0e97768e0cee52f60ac6c1",
+      "size_bytes": 2484,
+      "base_sha256": "6a757c5775854a6709e6f718fa5f10af1eabc127185bdaa2c06232065dc6462e"
+    },
+    {
+      "path": "application/ui/src/features/project/list/import-dataset-as-new-project/import-dataset-as-new-project.component.tsx",
+      "status": "modified",
+      "sha256": "6bc37c0a300e6ff97334344bdcfa25aa2de64fb1a02563af139aab3dd15de348",
+      "size_bytes": 4481,
+      "base_sha256": "ec73ae8a556213ef13f68d6d9b17bcf0ce667158e4ed911e0766c2f3202ea79b"
+    },
+    {
+      "path": "application/ui/src/features/project/list/import-dataset-as-new-project/import-dataset-buttons/import-dataset-buttons.component.tsx",
+      "status": "modified",
+      "sha256": "a817de958e00cdb0bf85ecc563286523601a279e00b844316604791588a4bde2",
+      "size_bytes": 2515,
+      "base_sha256": "ab2e2f9015b36d1eba785fd5a499bf44f096d106ccb35b86523be031985f068e"
+    },
+    {
+      "path": "application/ui/src/features/project/list/import-dataset-as-new-project/import-label-mapping/import-label-mapping-buttons.component.tsx",
+      "status": "modified",
+      "sha256": "04ef5f62fc553f0ea9b10ed5229ec8e0c3c146b25e38edd94da61f6fcb2aa7ba",
+      "size_bytes": 1721,
+      "base_sha256": "3e8b7b9e25e85d93a95611f8fc1dee37af93da029cc8e05feb1d945bc0f759cf"
+    },
+    {
+      "path": "application/ui/src/features/project/list/import-dataset-as-new-project/import-label-mapping/import-label-mapping.component.tsx",
+      "status": "modified",
+      "sha256": "3ead1a8b5e2410e24ee190624729dd2d34bedec4fa51248acefea388f1503a1e",
+      "size_bytes": 5124,
+      "base_sha256": "6742b22e861ab7c4d5ddf2214b02105250a5300d7381b4afd8812e56b7bb54f6"
+    },
+    {
+      "path": "application/ui/src/features/project/list/import-dataset-as-new-project/import-process/import-process.component.tsx",
+      "status": "modified",
+      "sha256": "b44657709ffffe1f2bf08b4441aa7aea9b1a1fa6e2c23c0f9d663f2ea46611a1",
+      "size_bytes": 1247,
+      "base_sha256": "6b37de7e01c66833583de8c7b519a66d8185491bd41921e664ac901d7700fd93"
+    },
+    {
+      "path": "application/ui/src/features/project/list/import-dataset-as-new-project/import-task-selection/import-task-selection-buttons.component.tsx",
+      "status": "modified",
+      "sha256": "f773278d17791f2ea1c372e7dc38571d21fcfa76fd937735140402a25ad49182",
+      "size_bytes": 1501,
+      "base_sha256": "e28b80e41b2931ae4b967258591d5e2969ce9d7f5fcff6abce7d1ca25aeaa891"
+    },
+    {
+      "path": "application/ui/src/features/project/list/import-dataset-as-new-project/import-task-selection/import-task-selection.component.tsx",
+      "status": "modified",
+      "sha256": "24c87d49486001a85894fa0adcdf57348b21f26fff5751a395ce7bd4bddaead8",
+      "size_bytes": 5528,
+      "base_sha256": "160012673c00758d49b2725b1b24101ca0ea79cd7dbcc3a91d80e2d618035d27"
+    },
+    {
+      "path": "application/ui/src/features/project/list/import-dataset-as-new-project/progress-stepper/progress-stepper.component.tsx",
+      "status": "modified",
+      "sha256": "e3620df9249c07cca322b72d8ec87c5dbd81d19620287cbcb4ca70954fc6cc5f",
+      "size_bytes": 2600,
+      "base_sha256": "c1dcde8b07ae17162d1b976a1d69b08fb45b221f65ce3f4cd92c50d72ec97b4a"
+    },
+    {
+      "path": "application/ui/src/features/project/list/import-jobs-list/import-jobs-list.component.tsx",
+      "status": "modified",
+      "sha256": "ed8e164e1d1081bfd412b24b036321e53a3c0581968b6c219edfa9f0e525a089",
+      "size_bytes": 5126,
+      "base_sha256": "ed33f5005d9119a0d6594f7d04e78891add1d4a71fda7b1139347da19cb77f72"
+    },
+    {
+      "path": "application/ui/src/features/project/list/menu-actions/menu-actions.component.tsx",
+      "status": "modified",
+      "sha256": "80868fdf6c456dd1f653bea637f590d8dfb06941512291ffb93be6b873d007d8",
+      "size_bytes": 4206,
+      "base_sha256": "4ffa0bf47e0699815fa1b7615e0b5182d6f84a03dafdc9368d7d65cb39c52e4c"
+    },
+    {
+      "path": "application/ui/src/features/project/list/menu-actions/use-project-menu-actions.ts",
+      "status": "modified",
+      "sha256": "7f76013f1ec0f25c9d1785a6d9865666a54a3e527cd88edd37052c3d24d9a545",
+      "size_bytes": 2579,
+      "base_sha256": "aa5bd6b7ee7abfc5c3305a1f03fee424d628da07568a802f6ac65f5a54b2bf76"
+    },
+    {
+      "path": "application/ui/src/features/project/list/new-project-card/new-project-card.component.tsx",
+      "status": "modified",
+      "sha256": "a45cae1a1091706f8c41fe1d775c9c6f80827a166c26e078c36970ee8165923a",
+      "size_bytes": 1667,
+      "base_sha256": "6554779304429d8938b95de9fbf1dad911799fc50d4c74b4b6a2284586d372f1"
+    },
+    {
+      "path": "application/ui/src/features/project/list/project-card.component.tsx",
+      "status": "modified",
+      "sha256": "71f8206b3773c4c57f906bbce5ac545978a6ca29bc54135802148482e0ce3fec",
+      "size_bytes": 5301,
+      "base_sha256": "4ce02a1e7b94bc1bc94fee54b6a3f43ad8dd9ec74277e83c5e522f754749cacc"
+    },
+    {
+      "path": "application/ui/src/features/project/list/project-list.component.tsx",
+      "status": "modified",
+      "sha256": "e58976428f7d416e7b9f9aedbf5d524cc1ce063e440b19d394b2bea5b27cbe42",
+      "size_bytes": 6424,
+      "base_sha256": "3293228034c6062608e66af2da6b247e3d7b4d46de3bd07a0d03b70a38a9b2a1"
+    },
+    {
+      "path": "application/ui/src/features/project/list/sort-projects/sort-projects.component.tsx",
+      "status": "modified",
+      "sha256": "855cfcd083c278da6598e4476e556237fc915419c4d5d45c2a16316e55a6e89f",
+      "size_bytes": 1286,
+      "base_sha256": "64e35da3be40cfc87f6dc1a219794fc27c103c2d38ce736fc1af45461957d965"
+    },
+    {
+      "path": "application/ui/src/features/project/list/sort-projects/utils.ts",
+      "status": "modified",
+      "sha256": "77ea70fe61dcefd517c1f7bc24b9e35a17b6a28b34848d7d9d6aea7272686fb7",
+      "size_bytes": 1126,
+      "base_sha256": "c4357d45df6bc836882552f410d43232d67ab146a42d6dcfdd86d2b4e99eab83"
+    },
+    {
+      "path": "application/ui/src/features/project/list/util.ts",
+      "status": "modified",
+      "sha256": "3cfac6b37b7bf284eba99e4bfcdabdcab75a1974d0bf0306725444950ba32dad",
+      "size_bytes": 892,
+      "base_sha256": "47091b0aafafc1ded076ebff6ec4f02e9b337ab53503d72774d2cd7e5f38b4da"
+    },
+    {
+      "path": "application/ui/src/features/project/task-selection/task-selection.component.tsx",
+      "status": "modified",
+      "sha256": "be226c392cf585a807ee48dd45c79282665547cb33d48a319843a5de8ebf1470",
+      "size_bytes": 4406,
+      "base_sha256": "7a66ca6e2e2f9cb9036838e3bcb8df725129a266754109105a821a3e5ac4aba9"
+    },
+    {
+      "path": "application/ui/src/features/project/validator.ts",
+      "status": "modified",
+      "sha256": "1ff85262b45f06261db849642d2cf597a5b148ffa5716b2cc4e86157433d8b24",
+      "size_bytes": 475,
+      "base_sha256": "2ce839cb8053e9265f57c7a1cf6c6781cd5d22874e44f06e5fad0cb6beced634"
+    },
+    {
+      "path": "application/ui/src/hooks/api/jobs/jobs.hook.ts",
+      "status": "modified",
+      "sha256": "46320b8b74c1080eb30f1c7d74ca5067c8ac65c47c0e3c36fef471cad1de6833",
+      "size_bytes": 5723,
+      "base_sha256": "06e50e1a615d7e563b7bdc7d134803f459c9ec74911aafb403760bacd02d6426"
+    },
+    {
+      "path": "application/ui/src/hooks/api/jobs/use-import-job-status.hook.tsx",
+      "status": "modified",
+      "sha256": "bfc9c6544789362408d5325aee8641593deb2a57cb29687a18373f5fc3dd2832",
+      "size_bytes": 1841,
+      "base_sha256": "3487926c4e16facf640b03d86a47cd5ea18bbfe12392eece1793b4cc9e1e7109"
+    },
+    {
+      "path": "application/ui/src/hooks/api/util.ts",
+      "status": "modified",
+      "sha256": "b9d8baaababff84c611a06585b4db0d1126f4c8bc537ca4bb4b4fd790b2bbce4",
+      "size_bytes": 1407,
+      "base_sha256": "c0150d7cc10ab8f14834241b9baf3c1b30ef39e5fff8686586215af17763973e"
+    },
+    {
+      "path": "application/ui/src/hooks/use-clipboard/use-clipboard.hook.ts",
+      "status": "modified",
+      "sha256": "89e64542d8cf5bb2f40ec0ae2d5264659123da44397881e3eabdb5909d68a5bb",
+      "size_bytes": 626,
+      "base_sha256": "47a943f3d22883a5560ef9f1d5039a0a72d1671fa1f19c02af7f2997019fdf14"
+    },
+    {
+      "path": "application/ui/src/i18n/config.ts",
+      "status": "modified",
+      "sha256": "d957f0a2a3d0b3c8c84fd553b250d512a7e0703af51ba2a93cd036e478932cce",
+      "size_bytes": 2905,
+      "base_sha256": "a9f6516d7169629f1208d4d1ee616a2d5fce630cf313c070183b7169ee4ef85d"
+    },
+    {
+      "path": "application/ui/src/i18n/index.ts",
+      "status": "modified",
+      "sha256": "536a3d3c0c92be6f01633a224b62874a54537769244f29f351a0a054bdfb1f43",
+      "size_bytes": 154,
+      "base_sha256": "534e1ac714be047a147cf1ef8b79a0fc1cc7895bdc7efdcc2bad58259ac3e422"
+    },
+    {
+      "path": "application/ui/src/i18n/locales/en.json",
+      "status": "modified",
+      "sha256": "21054d6e24241c3bbbed45b80211ab096f3af3ce0ce610b7953fd7edf75433e4",
+      "size_bytes": 124259,
+      "base_sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    },
+    {
+      "path": "application/ui/src/i18n/locales/zh-CN.json",
+      "status": "modified",
+      "sha256": "92cff58eac8e9dff960f76a89aa8a0c8f342072abf2f8eae6f8424d770ff9e66",
+      "size_bytes": 115279,
+      "base_sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    },
+    {
+      "path": "application/ui/src/i18n/translations.test.ts",
+      "status": "added",
+      "sha256": "11bbdda1dac9f5d08fc858895c7719e0cc7851ac5eec59f34b63ba3d34a356bf",
+      "size_bytes": 1938,
+      "base_sha256": null
+    },
+    {
+      "path": "application/ui/src/index.tsx",
+      "status": "modified",
+      "sha256": "e93e68576dadc216efad0cfffbc007999fb6d6f06c6d2dfdbd424901cdab1eb1",
+      "size_bytes": 649,
+      "base_sha256": "953fed36aa9c56738837b82b149935576abd7375bea96d42d35e4c1e98ab80e0"
+    },
+    {
+      "path": "application/ui/src/layout.tsx",
+      "status": "modified",
+      "sha256": "c28842561dc114f1208ff0e60195fe6aeb4f90a2d1e2efd4e9f046729798ef34",
+      "size_bytes": 4517,
+      "base_sha256": "e2c3cd7bc907df030a663ad3e1bcef94cb858bb45e957808196901c2516b8194"
+    },
+    {
+      "path": "application/ui/src/platform/download-file.tauri.ts",
+      "status": "modified",
+      "sha256": "a3febb2b27c304960793ca6ca2d4bd2ecc5c14861b7ad9a4467650a9fde48d21",
+      "size_bytes": 2231,
+      "base_sha256": "787fbc9d844d2d66f0f2d9d964082bd1037a6c588e1e4c339b626e21449cd5bf"
+    },
+    {
+      "path": "application/ui/src/providers.tsx",
+      "status": "modified",
+      "sha256": "b4f83c800dbb94961ee90008c9d7db8f2d850f486ba7b7b087c950f20bb18e91",
+      "size_bytes": 902,
+      "base_sha256": "ee6d5287e931529db164d47ca768dfeea817d5582eedc62e9b46e56045033f02"
+    },
+    {
+      "path": "application/ui/src/query-client/query-client.ts",
+      "status": "modified",
+      "sha256": "6006a9c5f95312fcf390b2e8b3da5ce0c87a263c01fafb91c6390d7870208566",
+      "size_bytes": 2850,
+      "base_sha256": "7fa1692262745408bdb368f8529cce4c7fbae080df24e8bc2f361007007ae145"
+    },
+    {
+      "path": "application/ui/src/routes/error-page/error-page.tsx",
+      "status": "modified",
+      "sha256": "908dbead7f2b0f8db3b3ca9487da6ba72bb23dd626ed7723ba0bd50571d22a2e",
+      "size_bytes": 2074,
+      "base_sha256": "0f8330877ae259ab3dafe5afb555624f0cde8ef062e4fdcddd72c3d092d45478"
+    },
+    {
+      "path": "application/ui/src/routes/project/create-project.tsx",
+      "status": "modified",
+      "sha256": "04ae4653d0d4a7b783848005d69211f7d3d3779ef1014a0e7fe896ecf977fbbe",
+      "size_bytes": 871,
+      "base_sha256": "4719d64ee9445403c04185979f9f638dd0810ec489526dee5fee0c7134287157"
+    },
+    {
+      "path": "application/ui/src/routes/root/root.tsx",
+      "status": "modified",
+      "sha256": "5ab71ed2e6302ce5df76fac996b0c04083adf561334952918b52f1024f776f42",
+      "size_bytes": 1908,
+      "base_sha256": "a2c6b5cb119859147422510b2ec369a3ec708a2385de331a47c1af9762e264b1"
+    },
+    {
+      "path": "application/ui/src/routes/root/server-error-fallback.component.tsx",
+      "status": "modified",
+      "sha256": "46e2a0634f52ab1fd13bc2192893f00c6416f12d37a9b39f3d4eea287cc7e4f9",
+      "size_bytes": 905,
+      "base_sha256": "21e74dec6b42eff99261f4c519eab275e2834087428d2efd8ae39dd295c54c0c"
+    },
+    {
+      "path": "application/ui/src/shared/annotator/labels.ts",
+      "status": "modified",
+      "sha256": "f5be937b0aa34fab1c7251b357a73f8e2fdc8c6e8d6792c392514967985a6346",
+      "size_bytes": 2389,
+      "base_sha256": "d1ca645e10a2388ef3e4704cdb99c9c89a1d8bc33b31c385e71a5d4b14f42ff0"
+    },
+    {
+      "path": "application/ui/src/shared/date-utils.ts",
+      "status": "modified",
+      "sha256": "c72fd30892164136cbcd451acd55efe5e3833637a50d028ce1aa9237f8dabc99",
+      "size_bytes": 1069,
+      "base_sha256": "32491a4ce73d1effc497c95d10cc64db315941d45e190527a916685078df4cde"
+    },
+    {
+      "path": "application/ui/src/shared/media-utils.ts",
+      "status": "modified",
+      "sha256": "594ba9a313c4fc6d4643a6a60aac81947d135cfbee7dd963c865b89ec801ff49",
+      "size_bytes": 1306,
+      "base_sha256": "fae448ac0ec3977bd63291383530f69d39d3734eefd1906b8d39c6b7c867068e"
+    },
+    {
+      "path": "application/ui/src/shared/util.ts",
+      "status": "modified",
+      "sha256": "618dfe3c6bc1f20836884d988e3bf76c5fd6c2c02abe9949ca0381c72ccdd0a9",
+      "size_bytes": 1303,
+      "base_sha256": "f985008619816fe749415d95a8d898c953d0b880d50f30b6bb538a32697e6f50"
+    },
+    {
+      "path": "application/ui/tests/localization/localization.spec.ts",
+      "status": "added",
+      "sha256": "95c7e166d7df86d0865a02a718d37a65f74d99d65aea771bd7c0a959dbe98c46",
+      "size_bytes": 7180,
+      "base_sha256": null
+    }
+  ]
+}

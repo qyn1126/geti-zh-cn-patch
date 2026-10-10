@@ -1,0 +1,30 @@
+// Copyright (C) 2026 Intel Corporation
+// SPDX-License-Identifier: Apache-2.0
+
+import { Button, Heading, IllustratedMessage, View } from '@geti-ui/ui';
+import { CloudErrorIcon } from '@geti-ui/ui/icons';
+
+import { paths } from '../../constants/paths';
+import { t } from '../../i18n';
+import { redirectTo } from '../utils';
+
+export const ServerErrorFallback = () => {
+    return (
+        <View height={'100vh'}>
+            <IllustratedMessage>
+                <CloudErrorIcon size='XXL' />
+                <Heading>{t('Server Error')}</Heading>
+
+                <Button
+                    variant={'accent'}
+                    marginTop={'size-200'}
+                    onPress={() => {
+                        redirectTo(paths.root({}));
+                    }}
+                >
+                    {t('Refresh')}
+                </Button>
+            </IllustratedMessage>
+        </View>
+    );
+};

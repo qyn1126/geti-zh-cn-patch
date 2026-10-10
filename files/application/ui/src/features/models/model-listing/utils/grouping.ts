@@ -1,0 +1,83 @@
+// Copyright (C) 2025 Intel Corporation
+// SPDX-License-Identifier: Apache-2.0
+
+import type { DatasetRevision, Model } from '@/api/types';
+
+import { t } from '../../../../i18n';
+import { formatDateTime } from '../../../../shared/date-utils';
+import type { GroupedModels } from '../types';
+
+const formatDatasetStartTime = (dateString: string | null | undefined): string => {
+    const formatted = formatDateTime(dateString);
+
+    return formatted === '-' ? formatted : t('Created {{value0}}', { value0: formatted });
+};
+
+type GroupModelsByDatasetOptions = {
+    datasetRevisions: DatasetRevision[];
+};
+
+export const groupModelsByDataset = (models: Model[], options?: GroupModelsByDatasetOptions): GroupedModels[] => {
+    const { datasetRevisions = [] } = options || {};
+    const groups: Record<string, GroupedModels> = {}; // datasetId -> models
+
+    const datasetRevisionsMap = new Map(
+        datasetRevisions.map((datasetRevision) => [datasetRevision.id, datasetRevision])
+    );
+
+    models.forEach((model) => {
+        // NOTE: We only need this ?? check if we develop with seeded models. This id should always exist.
+        const datasetId = model.training_info.dataset_revision_id ?? '';
+        const labels = model.training_info.label_schema_revision?.labels;
+        const labelCount = Array.isArray(labels) ? labels.length : 0;
+        const datasetRevision = datasetRevisionsMap.get(datasetId);
+
+        if (!groups[datasetId]) {
+            groups[datasetId] = {
+                group: {
+                    id: datasetId,
+                    name: datasetRevision?.name ?? t('Dataset #{{value0}}', { value0: datasetId.slice(0, 8) }),
+                    createdAt: formatDatasetStartTime(
+                        datasetRevision ? datasetRevision.created_at : model.training_info.start_time
+                    ),
+                    labelCount,
+                    imageCount: datasetRevision?.item_counts?.total ?? 0,
+                    trainingSubsets: {
+                        training: datasetRevision?.item_counts?.training ?? 0,
+                        validation: datasetRevision?.item_counts?.validation ?? 0,
+                        testing: datasetRevision?.item_counts?.testing ?? 0,
+                    },
+                    filesDeleted: datasetRevision?.files_deleted ?? false,
+                },
+                models: [],
+            };
+        }
+
+        if (groups[datasetId] !== undefined) {
+            groups[datasetId].models.push(model);
+        }
+    });
+
+    return Object.values(groups);
+};
+
+export const groupModelsByArchitecture = (models: Model[]): GroupedModels[] => {
+    const groups: Record<string, GroupedModels> = {}; // architecture -> models
+
+    models.forEach((model) => {
+        const arch = model.architecture ?? t('Unknown');
+
+        if (!groups[arch]) {
+            groups[arch] = {
+                group: {
+                    id: arch,
+                },
+                models: [],
+            };
+        }
+
+        groups[arch].models.push(model);
+    });
+
+    return Object.values(groups);
+};

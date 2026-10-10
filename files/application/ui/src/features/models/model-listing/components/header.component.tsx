@@ -1,0 +1,104 @@
+// Copyright (C) 2025 Intel Corporation
+// SPDX-License-Identifier: Apache-2.0
+
+import { Key, useMemo } from 'react';
+
+import { ActionButton, Flex, Grid, Item, Menu, MenuTrigger, Picker } from '@geti-ui/ui';
+import { MoreMenu } from '@geti-ui/ui/icons';
+import { useProjectTask } from 'hooks/use-project-task.hook';
+
+import { t } from '../../../../i18n';
+import { TrainModel } from '../../train-model/train-model.component';
+import { useModelListing } from '../provider/model-listing-provider';
+import type { GroupByMode, SortBy } from '../types';
+import { ExpandableSearch } from './expandable-search/expandable-search.component';
+import { getPerformanceColumnLabel } from './model-row/utils';
+
+type MoreOptionsProps = {
+    showFailedModels: boolean;
+    onToggleShowFailedModels: () => void;
+};
+const MoreOptions = ({ showFailedModels, onToggleShowFailedModels }: MoreOptionsProps) => {
+    const handleOptionsAction = (key: Key) => {
+        switch (key) {
+            case 'show-failed':
+                onToggleShowFailedModels();
+                break;
+            default:
+                break;
+        }
+    };
+
+    return (
+        <MenuTrigger>
+            <ActionButton isQuiet aria-label={t('Model listing options')}>
+                <MoreMenu />
+            </ActionButton>
+            <Menu onAction={handleOptionsAction} aria-label={t('Model listing options menu')}>
+                <Item key={'show-failed'}>{showFailedModels ? t('Hide failed models') : t('Show failed models')}</Item>
+            </Menu>
+        </MenuTrigger>
+    );
+};
+
+export const Header = () => {
+    const {
+        groupBy,
+        sortBy,
+        onGroupByChange,
+        onSortChange,
+        searchBy,
+        onSearchChange,
+        showFailedModels,
+        onToggleShowFailedModels,
+        groupedModels,
+    } = useModelListing();
+    const taskType = useProjectTask();
+    const performanceMetricName = useMemo(() => {
+        const models = groupedModels.flatMap((group) => group.models);
+
+        return getPerformanceColumnLabel(models, taskType);
+    }, [groupedModels, taskType]);
+
+    return (
+        <Grid columns={['auto auto 1fr auto']} gap={'size-100'} alignItems={'center'}>
+            <Flex gap={'size-100'}>
+                <Picker
+                    placeholder={t('Group by')}
+                    width={'size-2400'}
+                    aria-label={t('Group models')}
+                    selectedKey={groupBy}
+                    onSelectionChange={(key) => onGroupByChange(key as GroupByMode)}
+                >
+                    <Item key='dataset'>{t('Group by: Dataset')}</Item>
+                    <Item key='architecture'>{t('Group by: Architecture')}</Item>
+                </Picker>
+                <Picker
+                    placeholder={t('Sort by')}
+                    width={'size-2000'}
+                    aria-label={t('Sort models')}
+                    selectedKey={sortBy}
+                    onSelectionChange={(key) => onSortChange(key as SortBy)}
+                >
+                    <Item key='name'>{t('Sort: Name')}</Item>
+                    <Item key='trained'>{t('Sort: Trained')}</Item>
+                    {groupBy === 'dataset' ? (
+                        <Item key='architecture'>{t('Sort: Architecture')}</Item>
+                    ) : (
+                        <Item key='dataset'>{t('Sort: Dataset')}</Item>
+                    )}
+                    <Item key='device'>{t('Sort: Device')}</Item>
+                    <Item key='size'>{t('Sort: Size')}</Item>
+                    <Item key='score'>{t('Sort: {{value0}}', { value0: performanceMetricName })}</Item>
+                </Picker>
+            </Flex>
+
+            <MoreOptions showFailedModels={showFailedModels} onToggleShowFailedModels={onToggleShowFailedModels} />
+
+            <Flex marginStart={'auto'} gap={'size-100'}>
+                <ExpandableSearch value={searchBy} onChange={onSearchChange} />
+                <TrainModel />
+            </Flex>
+        </Grid>
+    );
+};

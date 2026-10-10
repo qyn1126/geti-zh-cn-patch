@@ -1,0 +1,9 @@
+This repository is under the Apache License Version 2.0 license.
+
+This package contains modified Geti UI source files based on the upstream
+app/v3.2.0 release, commit 9456821d060a2143cf05a2e01504acbb9924a578.
+The modifications add Simplified Chinese localization. FILE_LIST.md lists
+the modified and added files; USAGE.md describes how to apply the changes.
+The original per-file copyright and license notices are retained.
+
+The optional `ultralytics` extra installs the Ultralytics YOLO package at runtime; it is not redistributed as part of this repository. The Ultralytics YOLO package and YOLO26 model weights are distributed under the AGPL-3.0 license. For commercial use and alternative licensing terms, see https://www.ultralytics.com/license.

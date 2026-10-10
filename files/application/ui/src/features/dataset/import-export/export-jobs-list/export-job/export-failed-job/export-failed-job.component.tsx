@@ -1,0 +1,48 @@
+// Copyright (C) 2026 Intel Corporation
+// SPDX-License-Identifier: Apache-2.0
+
+import type { ExportDatasetJob } from '@/api/types';
+import { Button, Divider, Flex, Text, View } from '@geti-ui/ui';
+
+import { useExportDataset } from '../../../../../../hooks/storage/use-export-dataset.hook';
+import { t } from '../../../../../../i18n';
+import { ExportJobDetails } from '../export-details/export-details.component';
+
+type ExportFailedJobProps = {
+    job: ExportDatasetJob;
+    datasetName?: string;
+};
+
+export const ExportFailedJob = ({ job, datasetName }: ExportFailedJobProps) => {
+    const { removeLsExportId } = useExportDataset();
+
+    const handleClose = () => {
+        removeLsExportId(job.job_id);
+    };
+
+    return (
+        <View padding='size-150'>
+            <Flex justifyContent='space-between' alignItems='center' gap='size-250'>
+                <ExportJobDetails metadata={job.metadata} datasetName={datasetName} />
+
+                <Flex justifyContent='space-between' alignItems='center' gap='size-250'>
+                    <Button
+                        variant='secondary'
+                        style='fill'
+                        aria-label={t('close export dataset status')}
+                        onPress={handleClose}
+                    >
+                        {t('Close')}
+                    </Button>
+                </Flex>
+            </Flex>
+
+            <Text>{job.message}</Text>
+            <Divider size='S' marginY='size-150' />
+            <Text>
+                {t('Error: ')}
+                {job.error}
+            </Text>
+        </View>
+    );
+};

@@ -1,0 +1,69 @@
+// Copyright (C) 2025 Intel Corporation
+// SPDX-License-Identifier: Apache-2.0
+
+import type { ExportDatasetMetadata } from '@/api/types';
+import { dimensionValue, Divider, Flex, Grid, Text } from '@geti-ui/ui';
+import { isEmpty, isNil } from 'lodash-es';
+
+import { useProject } from '../../../../../../hooks/api/project.hook';
+import { t } from '../../../../../../i18n';
+
+type ExportJobDetailsProps = {
+    datasetName?: string;
+    metadata: ExportDatasetMetadata;
+};
+
+const isGetiFormat = (format?: string | null) => format?.toLowerCase() === 'geti';
+
+export const ExportJobDetails = ({ datasetName, metadata }: ExportJobDetailsProps) => {
+    const { data: selectedProject } = useProject();
+
+    const projectLabels = selectedProject.task.labels ?? [];
+    const exportLabelsNames = metadata.filters.labels ?? [];
+
+    const projectLabelsNames = projectLabels.map((label) => label.name);
+    const selectedLabels = exportLabelsNames.filter((name) => projectLabelsNames.includes(name));
+
+    const labelsList = isEmpty(selectedLabels) ? projectLabelsNames : selectedLabels;
+
+    return (
+        <Flex direction={'column'}>
+            <Text UNSAFE_style={{ fontWeight: 500, fontSize: dimensionValue('size-225') }}>
+                {t('Export ')}
+                {isNil(datasetName) ? t('dataset') : datasetName}
+            </Text>
+
+            <Grid
+                marginTop={'size-200'}
+                alignItems={'center'}
+                gap='size-125'
+                columns={['auto', '1px', 'auto', '1px', '1fr']}
+            >
+                <Text>
+                    {t('Format:')}{' '}
+                    <Text
+                        UNSAFE_style={{
+                            textTransform: isGetiFormat(metadata.export_format) ? 'capitalize' : 'uppercase',
+                        }}
+                    >
+                        {metadata.export_format}
+                    </Text>{' '}
+                </Text>
+
+                <Divider orientation='vertical' size='S' />
+
+                <Text>
+                    {t('Media: ')}
+                    {metadata.filters.include_unannotated ? t('All media') : t('Only media with annotations')}
+                </Text>
+
+                <Divider orientation='vertical' size='S' />
+
+                <Text UNSAFE_style={{ overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis' }}>
+                    {t('Labels: ')}
+                    {labelsList.join(', ')}
+                </Text>
+            </Grid>
+        </Flex>
+    );
+};
